@@ -41,10 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/env/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="40" selection-start="74" selection-end="74" vertical-scroll-proportion="0.06696428" vertical-offset="0" max-vertical-offset="672">
+            <state line="3" column="40" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="49" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -59,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="production.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/env/production.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="4" column="66" selection-start="140" selection-end="140" vertical-scroll-proportion="0.08928572" vertical-offset="0" max-vertical-offset="672">
               <folding />
             </state>
           </provider>
@@ -118,9 +127,9 @@
         <option value="$PROJECT_DIR$/config/env/test.json" />
         <option value="$PROJECT_DIR$/config/env/travis.json" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/config/env/development.js" />
         <option value="$PROJECT_DIR$/config/env/test.js" />
+        <option value="$PROJECT_DIR$/config/env/production.js" />
       </list>
     </option>
   </component>
@@ -492,16 +501,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/all.js">
+    <entry file="file://$PROJECT_DIR$/config/env/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="182" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="3" column="40" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/production.js">
+    <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="30" column="49" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="182" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
@@ -513,9 +529,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/test.js">
+    <entry file="file://$PROJECT_DIR$/config/env/production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="40" selection-start="74" selection-end="74" vertical-scroll-proportion="0.06696428" vertical-offset="0" max-vertical-offset="672">
+        <state line="4" column="66" selection-start="140" selection-end="140" vertical-scroll-proportion="0.08928572" vertical-offset="0" max-vertical-offset="672">
           <folding />
         </state>
       </provider>
