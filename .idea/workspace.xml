@@ -59,10 +59,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/env/production.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="521" selection-end="521" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="672">
+            <state line="16" column="66" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="9" selection-start="58" selection-end="58" vertical-scroll-proportion="0.02232143" vertical-offset="0" max-vertical-offset="672">
               <folding />
             </state>
           </provider>
@@ -87,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/stores.js" />
         <option value="$PROJECT_DIR$/app/controllers/intelligence.js" />
         <option value="$PROJECT_DIR$/public/views/left.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.jade" />
@@ -103,6 +111,7 @@
         <option value="$PROJECT_DIR$/config/env/production.js" />
         <option value="$PROJECT_DIR$/config/env/test.js" />
         <option value="$PROJECT_DIR$/config/env/development.js" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -494,7 +503,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/env/production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="521" selection-end="521" vertical-scroll-proportion="0.35714287" vertical-offset="0" max-vertical-offset="672">
+        <state line="16" column="66" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="58" selection-end="58" vertical-scroll-proportion="0.02232143" vertical-offset="0" max-vertical-offset="672">
           <folding />
         </state>
       </provider>
