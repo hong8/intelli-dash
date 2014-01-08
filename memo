@@ -2,3 +2,12 @@ git add .
 git commit -m 'commit'
 git push heroku master
 
+
+<link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="http://bootswatch.com/bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+
+<script src="http://bootswatch.com/assets/js/bsa.js"></script>
+<script src="http://bootswatch.com/bower_components/jquery/jquery.min.js"></script>
+<script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="http://bootswatch.com/assets/js/bootswatch.js"></script>

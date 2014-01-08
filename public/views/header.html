@@ -8,11 +8,11 @@
         </button>
     </div>
     <div class="navbar-collapse collapse" id="navbar-main">
-        <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}"
-        ng-class="{active: $uiRoute}">
-            <a href="#!/{{item.link}}">{{item.title}}</a>
-        </li>
         <ul class="nav navbar-nav">
+            <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}"
+            ng-class="{active: $uiRoute}">
+                <a href="#!/{{item.link}}">{{item.title}}</a>
+            </li>
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
                 <ul class="dropdown-menu" aria-labelledby="themes">
@@ -61,17 +61,17 @@
             <li>
                 <a href="../help/">Help</a>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="download">
-                    <li>
-                        <a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="./bootstrap.css">bootstrap.css</a>
-                    </li>
-                </ul>
-            </li>
+            <!--<li class="dropdown">-->
+            <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>-->
+            <!--    <ul class="dropdown-menu" aria-labelledby="download">-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="./bootstrap.css">bootstrap.css</a>-->
+            <!--        </li>-->
+            <!--    </ul>-->
+            <!--</li>-->
         </ul>
         <ul class="nav pull-right" data-ng-hide="global.authenticated">
             <li>
