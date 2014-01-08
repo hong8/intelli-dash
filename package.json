@@ -1,12 +1,12 @@
 {
     "name": "mean",
-    "description": "MEAN - A Modern Stack: MongoDB, ExpressJS, AngularJS, NodeJS. (BONUS: Passport User Support).",
+    "description": "Intelligence Dashboard",
     "version": "0.1.2",
     "private": false,
     "author": "Amos Haviv",
     "repository": {
         "type": "git",
-        "url": "https://github.com/linnovate/mean.git"
+        "url": "https://github.com/hong8/intelli-dash.git"
     },
     "engines": {
         "node": "0.10.x",

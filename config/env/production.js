@@ -4,7 +4,7 @@ module.exports = {
     /*db: "mongodb://localhost/mean",*/
     db: "mongodb://hong8:0033mh@dharma.mongohq.com:10063/hong8DB",
     app: {
-        name: "MEAN - A Modern Stack - Production"
+        name: "Intelligence Dashboard - Production"
     },
     facebook: {
         clientID: "APP_ID",
