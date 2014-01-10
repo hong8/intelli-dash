@@ -13,77 +13,63 @@
             ng-class="{active: $uiRoute}">
                 <a href="#!/{{item.link}}">{{item.title}}</a>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-                <ul class="dropdown-menu" aria-labelledby="themes">
-                    <li>
-                        <a tabindex="-1" href="../default/">Default</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a tabindex="-1" href="../amelia/">Amelia</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../cerulean/">Cerulean</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../cosmo/">Cosmo</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../cyborg/">Cyborg</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../flatly/">Flatly</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../journal/">Journal</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../readable/">Readable</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../simplex/">Simplex</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../slate/">Slate</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../spacelab/">Spacelab</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../united/">United</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="../yeti/">Yeti</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="../help/">Help</a>
-            </li>
             <!--<li class="dropdown">-->
-            <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>-->
-            <!--    <ul class="dropdown-menu" aria-labelledby="download">-->
+            <!--    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>-->
+            <!--    <ul class="dropdown-menu" aria-labelledby="themes">-->
             <!--        <li>-->
-            <!--            <a tabindex="-1" href="./bootstrap.min.css">bootstrap.min.css</a>-->
+            <!--            <a tabindex="-1" href="../default/">Default</a>-->
+            <!--        </li>-->
+            <!--        <li class="divider"></li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../amelia/">Amelia</a>-->
             <!--        </li>-->
             <!--        <li>-->
-            <!--            <a tabindex="-1" href="./bootstrap.css">bootstrap.css</a>-->
+            <!--            <a tabindex="-1" href="../cerulean/">Cerulean</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../cosmo/">Cosmo</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../cyborg/">Cyborg</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../flatly/">Flatly</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../journal/">Journal</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../readable/">Readable</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../simplex/">Simplex</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../slate/">Slate</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../spacelab/">Spacelab</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../united/">United</a>-->
+            <!--        </li>-->
+            <!--        <li>-->
+            <!--            <a tabindex="-1" href="../yeti/">Yeti</a>-->
             <!--        </li>-->
             <!--    </ul>-->
             <!--</li>-->
-        </ul>
-        <ul class="nav pull-right" data-ng-hide="global.authenticated">
             <li>
+                <a href="../help/">Help</a>
+            </li>
+            
+            <li class="nav navbar-nav navbar-right" data-ng-hide="global.authenticated">
                 <a href="signup">Signup</a>
             </li>
-            <li class="divider-vertical"></li>
-            <li>
+            <li class="divider-vertical" data-ng-hide="global.authenticated"></li>
+            <li class="nav navbar-nav navbar-right" data-ng-hide="global.authenticated">
                 <a href="signin">Signin</a>
             </li>
-        </ul>
-        <ul class="nav pull-right" data-ng-show="global.authenticated">
-            <li class="dropdown">
+            <li class="dropdown" data-ng-show="global.authenticated">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
     			{{global.user.name}} <b class="caret"></b>
     		</a>
