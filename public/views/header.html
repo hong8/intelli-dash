@@ -61,18 +61,19 @@
             <li>
                 <a href="../help/">Help</a>
             </li>
-            
-            <li class="nav navbar-nav navbar-right" data-ng-hide="global.authenticated">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li data-ng-hide="global.authenticated">
                 <a href="signup">Signup</a>
             </li>
             <li class="divider-vertical" data-ng-hide="global.authenticated"></li>
-            <li class="nav navbar-nav navbar-right" data-ng-hide="global.authenticated">
+            <li data-ng-hide="global.authenticated">
                 <a href="signin">Signin</a>
             </li>
             <li class="dropdown" data-ng-show="global.authenticated">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    			{{global.user.name}} <b class="caret"></b>
-    		</a>
+                    {{global.user.name}} <b class="caret"></b>
+                </a>
                 <ul class="dropdown-menu">
                     <li>
                         <a href="/signout">Signout</a>
