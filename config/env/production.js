@@ -17,13 +17,13 @@ module.exports = {
         callbackURL: "http://intelli-dash.herokuapp.com/auth/twitter/callback"
     },
     github: {
-        clientID: "APP_ID",
-        clientSecret: "APP_SECRET",
-        callbackURL: "http://localhost:3000/auth/github/callback"
+        clientID: "b8af4b8b0ab364b1984d",
+        clientSecret: "b7e7ea13c14e4ceeb04e69425fbbf56b9cd57783",
+        callbackURL: "http://intelli-dash.herokuapp.com/auth/github/callback"
     },
     google: {
-        clientID: "APP_ID",
-        clientSecret: "APP_SECRET",
-        callbackURL: "http://localhost:3000/auth/google/callback"
+        clientID: "114439128189-vpqtnncflvp0rbri67nhfoqujk60mnoq.apps.googleusercontent.com",
+        clientSecret: "-upPvzTWzhqiI3RdGK_2zz2R",
+        callbackURL: "http://intelli-dash.herokuapp.com/auth/google/callback"
     }
 }
