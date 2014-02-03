@@ -7,13 +7,13 @@ module.exports = {
         name: "Intelligence Dashboard - Test"
     },
     facebook: {
-        clientID: "APP_ID",
-        clientSecret: "APP_SECRET",
+        clientID: "266754056823515",
+        clientSecret: "7609a4344841e2043690c204e49f19fc",
         callbackURL: "http://localhost:3000/auth/facebook/callback"
     },
     twitter: {
-        clientID: "CONSUMER_KEY",
-        clientSecret: "CONSUMER_SECRET",
+        clientID: "hdpe2sweuisDYHER643sEQ",
+        clientSecret: "9tMhhKIeaTIQDYjjoWFhOHZNbdDYiWoqWN7qI8LIaE",
         callbackURL: "http://localhost:3000/auth/twitter/callback"
     },
     github: {

@@ -11,8 +11,8 @@ module.exports = {
         callbackURL: "http://192.168.179.100:3000/auth/facebook/callback"
     },
     twitter: {
-        clientID: "CONSUMER_KEY",
-        clientSecret: "CONSUMER_SECRET",
+        clientID: "hdpe2sweuisDYHER643sEQ",
+        clientSecret: "9tMhhKIeaTIQDYjjoWFhOHZNbdDYiWoqWN7qI8LIaE",
         callbackURL: "http://localhost:3000/auth/twitter/callback"
     },
     github: {

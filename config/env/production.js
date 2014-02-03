@@ -12,9 +12,9 @@ module.exports = {
         callbackURL: "http://intelli-dash.herokuapp.com/auth/facebook/callback"
     },
     twitter: {
-        clientID: "CONSUMER_KEY",
-        clientSecret: "CONSUMER_SECRET",
-        callbackURL: "http://localhost:3000/auth/twitter/callback"
+        clientID: "hdpe2sweuisDYHER643sEQ",
+        clientSecret: "9tMhhKIeaTIQDYjjoWFhOHZNbdDYiWoqWN7qI8LIaE",
+        callbackURL: "http://intelli-dash.herokuapp.com/auth/twitter/callback"
     },
     github: {
         clientID: "APP_ID",
