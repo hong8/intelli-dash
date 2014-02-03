@@ -7,9 +7,9 @@ module.exports = {
         name: "Intelligence Dashboard - Production"
     },
     facebook: {
-        clientID: "APP_ID",
-        clientSecret: "APP_SECRET",
-        callbackURL: "http://localhost:3000/auth/facebook/callback"
+        clientID: "266754056823515",
+        clientSecret: "7609a4344841e2043690c204e49f19fc",
+        callbackURL: "http://intelli-dash.herokuapp.com/auth/facebook/callback"
     },
     twitter: {
         clientID: "CONSUMER_KEY",
