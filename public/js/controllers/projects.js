@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mean.projects').controller('ProjectController', ['$scope', '$routeParams', '$location', 'Global', 'Projects', function ($scope, $routeParams, $location, Global, Projects) {
+angular.module('intelli-dash.projects').controller('ProjectController', ['$scope', '$routeParams', '$location', 'Global', 'Projects', function ($scope, $routeParams, $location, Global, Projects) {
     $scope.global = Global;
 
     $scope.create = function() {

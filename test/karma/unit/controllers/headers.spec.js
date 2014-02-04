@@ -1,10 +1,10 @@
 'use strict';
 
 (function() {
-    describe('MEAN controllers', function() {
+    describe('Intelligence Dashboard controllers', function() {
         describe('HeaderController', function() {
             // Load the controllers module
-            beforeEach(module('mean'));
+            beforeEach(module('intelli-dash'));
 
             var scope, HeaderController;
 

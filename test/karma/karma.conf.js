@@ -29,12 +29,13 @@ module.exports = function(config) {
             'public/js/directives.js',
             'public/js/filters.js',
             'public/js/services/global.js',
-            'public/js/services/articles.js',
-            'public/js/controllers/articles.js',
             'public/js/controllers/index.js',
             'public/js/controllers/header.js',
             'public/js/init.js',
-            'test/karma/unit/**/*.js'
+            'test/karma/unit/**/*.js',
+
+            'public/js/services/*.js',
+            'public/js/controllers/*.js'
         ],
 
 
