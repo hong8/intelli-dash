@@ -15,15 +15,15 @@ describe('<Unit Test>', function() {
     describe('Model User:', function() {
         before(function(done) {
             user = new User({
-                name: 'Full name',
-                email: 'test@test.com',
-                username: 'user',
+                name: 'Full name 1',
+                nick_name: 'Nick 1',
+                email: 'test1@test.com',
                 password: 'password'
             });
             user2 = new User({
-                name: 'Full name',
-                email: 'test@test.com',
-                username: 'user',
+                name: 'Full name 2',
+                nick_name: 'Nick 2',
+                email: 'test2@test.com',
                 password: 'password'
             });
 
