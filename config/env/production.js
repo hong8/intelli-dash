@@ -2,7 +2,7 @@
 
 module.exports = {
     /*db: "mongodb://localhost/intelli-dash",*/
-    db: "mongodb://hong8:0033mh@dharma.mongohq.com:10063/intelli-dash",
+    db: "mongodb://hong8:0033mh@troup.mongohq.com:10007/intelli-dash",
     app: {
         name: "Intelligence Dashboard - Production"
     },
