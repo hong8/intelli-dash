@@ -2,22 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b305129-47ef-40d5-8d7a-85a5a08dbe6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/articles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/layouts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/services/articles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/mocha/article/model.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/mocha/article/model.js.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/mocha/user/model.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/articles.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/projects.spec.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/mocha/project/model.js" afterPath="$PROJECT_DIR$/test/mocha/project/model.js.abk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/development.js" afterPath="$PROJECT_DIR$/config/env/development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/headers.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" afterPath="$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/karma/karma.conf.js" afterPath="$PROJECT_DIR$/test/karma/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/projects.js" afterPath="$PROJECT_DIR$/public/js/controllers/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/services/projects.js" afterPath="$PROJECT_DIR$/public/js/services/projects.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/controllers/header.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/controllers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/controllers/index.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/controllers/projects.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/services/global.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/services/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/services/projects.js.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_002654.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_003045.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_003324.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_003348.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_003449.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_004208.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_004301.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_005032.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_005157.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_005210.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_005448.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="intelli-dash.iws" />
@@ -344,24 +349,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="coverage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -619,7 +606,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1537" height="905" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -627,7 +614,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41645244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38175896" sideWeight="0.58354753" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38175896" sideWeight="0.58354753" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -696,20 +683,6 @@
     <entry file="file://$PROJECT_DIR$/test/karma/unit/controllers/index.spec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="43" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/coverage/coverage-PhantomJS 1.9.2 (Linux)-20140204_005210.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/coverage/PhantomJS 1.9.2 (Linux)/services/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="352" selection-end="352" vertical-scroll-proportion="0.5801105" vertical-offset="0" max-vertical-offset="5280">
           <folding />
         </state>
       </provider>
