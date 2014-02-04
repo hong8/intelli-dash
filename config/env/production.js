@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-    /*db: "mongodb://localhost/mean",*/
-    db: "mongodb://hong8:0033mh@dharma.mongohq.com:10063/hong8DB",
+    /*db: "mongodb://localhost/intelli-dash",*/
+    db: "mongodb://hong8:0033mh@dharma.mongohq.com:10063/intelli-dash",
     app: {
         name: "Intelligence Dashboard - Production"
     },

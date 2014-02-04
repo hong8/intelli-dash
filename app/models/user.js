@@ -29,7 +29,10 @@ var UserSchema = new Schema({
     salt: String,
     auth_type: Boolean,
     groups: [],
-    use_yn: Boolean,
+    use_yn: {
+        type : Boolean,
+        default : true
+    },
     facebook: {},
     twitter: {},
     github: {},
