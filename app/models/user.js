@@ -27,11 +27,14 @@ var UserSchema = new Schema({
     hashed_password: String,
     provider: String,
     salt: String,
-    auth_type: Boolean,
-    groups: [],
+    auth_type: String,
+    projects: [{
+        type: Number,
+        ref: 'Project'
+    }],
     use_yn: {
-        type : Boolean,
-        default : true
+        type: Boolean,
+        default: true
     },
     facebook: {},
     twitter: {},
@@ -83,10 +86,8 @@ UserSchema.path('hashed_password').validate(function(hashed_password) {
 UserSchema.pre('save', function(next) {
     if (!this.isNew) return next();
 
-    if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1)
-        next(new Error('Invalid password'));
-    else
-        next();
+    if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1) next(new Error('Invalid password'));
+    else next();
 });
 
 /**

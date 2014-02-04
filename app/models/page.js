@@ -8,35 +8,33 @@ var mongoose = require('mongoose'),
 
 
 /**
- * Group Schema
+ * Page Schema
  */
-var GroupSchema = new Schema({
+var PageSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
     },
     name: String,
-    pages: [{
-        type: Number,
-        ref: 'Page'
-    }],
+    view_name: String,
+    upper_page: String,
     use_yn: Boolean
 });
 
 /**
  * Validations
  */
-GroupSchema.path('name').validate(function(name) {
+PageSchema.path('name').validate(function(name) {
     return name.length;
 }, 'Name cannot be blank');
 
 /**
  * Statics
  */
-GroupSchema.statics.load = function(id, cb) {
+PageSchema.statics.load = function(id, cb) {
     this.findOne({
         _id: id
-    }).populate('pages').exec(cb);
+    }).populate('view_name').exec(cb);
 };
 
-mongoose.model('Group', GroupSchema);
+mongoose.model('Page', PageSchema);

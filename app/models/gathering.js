@@ -22,7 +22,7 @@ var GatheringSchema = new Schema({
     filters: [],
     components: [{
         type: Schema.ObjectId,
-        ref: 'Components'
+        ref: 'Component'
     }],
     store_yn: Boolean,
     intelligence_yn: Boolean

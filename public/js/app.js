@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mean', ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.route', 'mean.system', 'mean.articles']);
+angular.module('intelli-dash', ['ngCookies', 'ngResource', 'ngRoute', 'ui.bootstrap', 'ui.route', 'intelli-dash.system', 'intelli-dash.articles']);
 
-angular.module('mean.system', []);
-angular.module('mean.articles', []);
+angular.module('intelli-dash.system', []);
+angular.module('intelli-dash.projects', []);
