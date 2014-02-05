@@ -4,6 +4,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.global = Global;
 
     $scope.init = function() {
+        alert('init')
         this.categories = [{
             category: 'Dashboard',
             value: 1
