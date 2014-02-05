@@ -27,12 +27,16 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
         var project = new Projects({
             name: this.name,
             description: this.description,
-            category: this.category,
+            category: this.category['value'],
             owner: global.user
         });
+        alert('111')
         project.$save(function(response) {
+            alert('222')
             $location.path('projects/' + response._id);
         });
+        
+        alert('333')
 
         this.name = '';
         this.discription = '';
