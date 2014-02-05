@@ -28,6 +28,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             name: this.name,
             description: this.description,
             category: this.category,
+            owner: global.user
         });
         project.$save(function(response) {
             $location.path('projects/' + response._id);
