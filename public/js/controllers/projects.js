@@ -24,6 +24,8 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     }
 
     $scope.create = function() {
+        $scope.init();
+        
         var project = new Projects({
             name: this.name,
             description: this.description,
@@ -74,6 +76,8 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     };
 
     $scope.findOne = function() {
+        $scope.init();
+        
         Projects.get({
             projectId: $routeParams.projectId
         }, function(project) {
