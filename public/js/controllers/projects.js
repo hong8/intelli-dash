@@ -24,16 +24,11 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     }
 
     $scope.create = function() {
-        alert(this.name)
-        alert(this.desc)
-        alert(this.category['value'])
-        alert(this.global.user)
-        alert(global.user)
         var project = new Projects({
             name: this.name,
             description: this.description,
             category: this.category['value'],
-            owner: global.user
+            owner: this.global.user
         });
         alert('111')
         project.$save(function(response) {
