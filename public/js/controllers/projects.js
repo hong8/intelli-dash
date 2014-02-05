@@ -12,8 +12,9 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             $location.path('projects/' + response._id);
         });
 
-        this.title = '';
-        this.content = '';
+        this.name = '';
+        this.discription = '';
+        this.category = 1;
     };
 
     $scope.remove = function(project) {

@@ -1,25 +1,36 @@
-<section data-ng-controller="ArticlesController" data-ng-init="findOne()">
-	<form class="form-horizontal" data-ng-submit="update()">
-		<div class="control-group">
-			<label class="control-label" for="title">Title</label>
-
-			<div class="controls">
-				<input type="text" data-ng-model="article.title" id="title" placeholder="Title" required>
-				</input>
-			</div>
-		</div>
-		<div class="control-group">
-			<label class="control-label" for="content">Content</label>
-
-			<div class="controls">
-				<textarea data-ng-model="article.content" id="content" cols="30" rows="10" placeholder="Content">
-				</textarea>
-			</div>
-		</div>
-		<div class="control-group">
-			<div class="controls">
-				<input type="submit" class="btn">
-			</div>
-		</div>
-	</form>
+<section data-ng-controller="ProjectsController" data-ng-init="findOne()">
+    <div class="well">
+        <form class="form-horizontal" data-ng-submit="update()">
+            <fieldset>
+                <legend>Legend</legend>
+                <div class="form-group">
+                    <label for="inputName" class="control-label">Name</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="project.name" class="form-control" id="inputName"
+                        placeholder="Name" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputDesc" class="control-label">Description</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="project.description" class="form-control"
+                        id="inputDesc" placeholder="Description">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="select" class="control-label">Selects</label>
+                    <div class="controls">
+                        <select class="form-control" data-ng-model="project.category" data-ng-options="category.name for category in categories" id="select" >
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="controls">
+                        <button class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </section>

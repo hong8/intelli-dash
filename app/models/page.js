@@ -17,6 +17,11 @@ var PageSchema = new Schema({
     },
     name: String,
     view_name: String,
+    description: String,
+    owner: {
+        type: Schema.ObjectId,
+        ref: 'User'
+    },
     upper_page: String,
     use_yn: Boolean
 });

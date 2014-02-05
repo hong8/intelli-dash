@@ -15,7 +15,15 @@ var GroupSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    name: String,
+    name: {
+        type: String,
+        unique: true
+    },
+    description: String,
+    owner: {
+        type: Schema.ObjectId,
+        ref: 'User'
+    },
     pages: [{
         type: Number,
         ref: 'Page'

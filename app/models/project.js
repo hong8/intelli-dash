@@ -15,7 +15,12 @@ var ProjectSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    name: String,
+    name: {
+        type: String,
+        unique: true
+    },
+    category: Number,
+    description: String,
     owner: {
         type: Schema.ObjectId,
         ref: 'User'
@@ -23,7 +28,8 @@ var ProjectSchema = new Schema({
     groups: [{
         type: Number,
         ref: 'Group'
-    }]
+    }],
+    use_yn: Boolean
 });
 
 /**
