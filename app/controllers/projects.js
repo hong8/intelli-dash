@@ -33,7 +33,8 @@ exports.create = function(req, res) {
                 errors: err.errors,
                 project: project
             });
-        } else {
+        }
+        else {
             res.jsonp(project);
         }
     });
@@ -53,7 +54,8 @@ exports.update = function(req, res) {
                 errors: err.errors,
                 project: project
             });
-        } else {
+        }
+        else {
             res.jsonp(project);
         }
     });
@@ -71,7 +73,8 @@ exports.destroy = function(req, res) {
                 errors: err.errors,
                 project: project
             });
-        } else {
+        }
+        else {
             res.jsonp(project);
         }
     });
@@ -93,7 +96,8 @@ exports.all = function(req, res) {
             res.render('error', {
                 status: 500
             });
-        } else {
+        }
+        else {
             res.jsonp(projects);
         }
     });

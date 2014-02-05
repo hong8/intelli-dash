@@ -1,6 +1,8 @@
 git add .
 git commit -m 'commit'
+git push origin master
 git push heroku master
+
 
 
 <link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css" media="screen">
@@ -12,4 +14,4 @@ git push heroku master
 <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="http://bootswatch.com/assets/js/bootswatch.js"></script>
 
-mongo dharma.mongohq.com:10063/hong8DB -u hong8 -p0033mh
+mongo troup.mongohq.com:10007/intelli-dash -u hong8 -p0033mh

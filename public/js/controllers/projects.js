@@ -1,12 +1,32 @@
 'use strict';
 
-angular.module('intelli-dash.projects').controller('ProjectController', ['$scope', '$routeParams', '$location', 'Global', 'Projects', function ($scope, $routeParams, $location, Global, Projects) {
+angular.module('intelli-dash.projects').controller('ProjectController', ['$scope', '$routeParams', '$location', 'Global', 'Projects', function($scope, $routeParams, $location, Global, Projects) {
     $scope.global = Global;
+
+    $scope.init = function() {
+        this.category = [{
+            category: 'Dashboard',
+            value: 1
+        }, {
+            category: 'Home Page',
+            value: 2
+        }, {
+            category: 'Blog',
+            value: 3
+        }, {
+            category: 'Board',
+            value: 4
+        }, {
+            category: 'Chat',
+            value: 5
+        }];
+    }
 
     $scope.create = function() {
         var project = new Projects({
-            title: this.title,
-            content: this.content
+            name: this.name,
+            description: this.description,
+            category: this.category,
         });
         project.$save(function(response) {
             $location.path('projects/' + response._id);
