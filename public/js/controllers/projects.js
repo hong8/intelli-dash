@@ -4,31 +4,27 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.global = Global;
 
     $scope.init = function() {
+        alert('111')
         this.categories = [{
-            category: 'Dashboard',
+            name: 'Dashboard',
             value: 1
         }, {
-            category: 'Home Page',
+            name: 'Home Page',
             value: 2
         }, {
-            category: 'Blog',
+            name: 'Blog',
             value: 3
         }, {
-            category: 'Board',
+            name: 'Board',
             value: 4
         }, {
-            category: 'Chat',
+            name: 'Chat',
             value: 5
         }];
     }
 
     $scope.create = function() {
-        alert("1")
         this.init();
-        alert("2")
-        init();
-        alert("3")
-        $scope.init();
         
         var project = new Projects({
             name: this.name,
