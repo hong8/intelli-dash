@@ -4,7 +4,6 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.global = Global;
 
     $scope.init = function() {
-        alert('111')
         this.categories = [{
             name: 'Dashboard',
             value: 1
@@ -21,11 +20,10 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             name: 'Chat',
             value: 5
         }];
+        this.category = this.categories[0];
     }
 
     $scope.create = function() {
-        this.init();
-        
         var project = new Projects({
             name: this.name,
             description: this.description,
@@ -38,7 +36,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
 
         this.name = '';
         this.discription = '';
-        this.category = 1;
+        this.category = this.categories[0];
     };
 
     $scope.remove = function(project) {
