@@ -25,7 +25,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
 
     $scope.create = function() {
         alert(this.name)
-        alert(this.description)
+        alert(this.desc)
         alert(this.category['value'])
         alert(this.global.user)
         alert(global.user)
