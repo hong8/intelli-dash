@@ -1,8 +1,8 @@
 git add .
 git commit -m 'commit'
-git push origin master
 git push heroku master
 
+git push origin master
 
 
 <link rel="stylesheet" href="http://bootswatch.com/united/bootstrap.min.css" media="screen">

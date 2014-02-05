@@ -24,6 +24,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     }
 
     $scope.create = function() {
+        alert('000')
         var project = new Projects({
             name: this.name,
             description: this.description,
