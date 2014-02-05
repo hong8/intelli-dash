@@ -21,7 +21,7 @@
             beforeEach(module('mean'));
 
             // Initialize the controller and a mock scope
-            var ProjectsController,
+            var ProjectController,
                 scope,
                 $httpBackend,
                 $routeParams,
@@ -34,7 +34,7 @@
 
                 scope = $rootScope.$new();
 
-                ProjectsController = $controller('ProjectsController', {
+                ProjectController = $controller('ProjectController', {
                     $scope: scope
                 });
 
