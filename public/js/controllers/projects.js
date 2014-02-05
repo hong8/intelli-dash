@@ -4,7 +4,6 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.global = Global;
 
     $scope.init = function() {
-        alert('init')
         this.categories = [{
             category: 'Dashboard',
             value: 1
@@ -24,6 +23,11 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     }
 
     $scope.create = function() {
+        alert("1")
+        this.init();
+        alert("2")
+        init();
+        alert("3")
         $scope.init();
         
         var project = new Projects({
