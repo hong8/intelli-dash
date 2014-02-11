@@ -30,14 +30,11 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             category: this.category['value'],
             owner: this.global.user
         });
-        alert('111')
         project.$save(function(response) {
             alert('222')
             $location.path('projects/' + response._id);
         });
         
-        alert('333')
-
         this.name = '';
         this.discription = '';
         this.category = this.categories[0];
