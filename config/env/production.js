@@ -25,5 +25,10 @@ module.exports = {
         clientID: "114439128189-vpqtnncflvp0rbri67nhfoqujk60mnoq.apps.googleusercontent.com",
         clientSecret: "-upPvzTWzhqiI3RdGK_2zz2R",
         callbackURL: "http://intelli-dash.herokuapp.com/auth/google/callback"
+    },
+    linkedin: {
+        clientID: 'API_KEY',
+        clientSecret: 'SECRET_KEY',
+        callbackURL: 'http://localhost:3000/auth/linkedin/callback'
     }
 }
