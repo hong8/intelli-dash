@@ -25,7 +25,7 @@ exports.project = function(req, res, next, id) {
  */
 exports.create = function(req, res) {
     var project = new Project(req.body);
-    project.user = req.user;
+    project.owner = req.user;
 
     project.save(function(err) {
         if (err) {

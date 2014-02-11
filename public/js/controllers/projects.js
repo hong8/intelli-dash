@@ -31,8 +31,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             owner: this.global.user
         });
         project.$save(function(response) {
-            alert('222')
-            $location.path('projects/' + response._id);
+            $location.path('projects/' + response.project._id);
         });
         
         this.name = '';
