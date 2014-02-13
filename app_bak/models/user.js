@@ -5,26 +5,41 @@
  */
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema,
-    crypto = require('crypto');
+    crypto = require('crypto'),
+    authTypes = ['github', 'twitter', 'facebook', 'google'];
+
 
 /**
  * User Schema
  */
 var UserSchema = new Schema({
-    name: String,
-    email: String,
-    username: {
+    created: {
+        type: Date,
+        default: Date.now
+    },
+    name: {
         type: String,
         unique: true
     },
+    nick_name: String,
+    email: String,
+    phone: String,
     hashed_password: String,
     provider: String,
     salt: String,
+    auth_type: String,
+    projects: [{
+        type: Number,
+        ref: 'Project'
+    }],
+    use_yn: {
+        type: Boolean,
+        default: true
+    },
     facebook: {},
     twitter: {},
     github: {},
-    google: {},
-    linkedin: {}
+    google: {}
 });
 
 /**
@@ -48,26 +63,20 @@ var validatePresenceOf = function(value) {
 // the below 4 validations only apply if you are signing up traditionally
 UserSchema.path('name').validate(function(name) {
     // if you are authenticating by any of the oauth strategies, don't validate
-    if (!this.provider) return true;
-    return (typeof name === 'string' && name.length > 0);
+    if (authTypes.indexOf(this.provider) !== -1) return true;
+    return name.length;
 }, 'Name cannot be blank');
 
 UserSchema.path('email').validate(function(email) {
     // if you are authenticating by any of the oauth strategies, don't validate
-    if (!this.provider) return true;
-    return (typeof email === 'string' && email.length > 0);
+    if (authTypes.indexOf(this.provider) !== -1) return true;
+    return email.length;
 }, 'Email cannot be blank');
-
-UserSchema.path('username').validate(function(username) {
-    // if you are authenticating by any of the oauth strategies, don't validate
-    if (!this.provider) return true;
-    return (typeof username === 'string' && username.length > 0);
-}, 'Username cannot be blank');
 
 UserSchema.path('hashed_password').validate(function(hashed_password) {
     // if you are authenticating by any of the oauth strategies, don't validate
-    if (!this.provider) return true;
-    return (typeof hashed_password === 'string' && hashed_password.length > 0);
+    if (authTypes.indexOf(this.provider) !== -1) return true;
+    return hashed_password.length;
 }, 'Password cannot be blank');
 
 
@@ -77,10 +86,8 @@ UserSchema.path('hashed_password').validate(function(hashed_password) {
 UserSchema.pre('save', function(next) {
     if (!this.isNew) return next();
 
-    if (!validatePresenceOf(this.password) && !this.provider)
-        next(new Error('Invalid password'));
-    else
-        next();
+    if (!validatePresenceOf(this.password) && authTypes.indexOf(this.provider) === -1) next(new Error('Invalid password'));
+    else next();
 });
 
 /**
