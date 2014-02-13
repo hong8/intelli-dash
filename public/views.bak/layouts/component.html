@@ -1,0 +1,25 @@
+<div class="box box-element ui-draggable">
+    <a href="#close" class="remove label label-important">
+        <i class="icon-remove icon-white"></i>Delete
+    </a>
+    <span class="drag label">
+        <i class="icon-move"></i>Drag</span>
+    <span class="configuration">
+        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                role="button" data-toggle="modal" data-ng-show="global.showEditor">Editor</button>
+        <a class="btn btn-mini" href="#" rel="property.rel" data-ng-repeat="property in global.properties | filter : {flag : 'button'}">{{property.name}}</a>
+
+        <span class="btn-group" data-ng-repeat="property in global.properties | filter : {flag : 'dropdown'}">
+            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">{{property.name}}<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown.class" data-ng-repeat="dropdown in property.dropdowns">
+                    <a href="#" rel="dropdown.rel">{{dropdown.name}}</a>
+                </li>
+            </ul>
+        </span>
+    </span>
+    <div class="preview">{{property.previewText}}</div>
+    <div class="view">
+        <span class="label" contenteditable="true">Text labels</span>
+    </div>
+</div>
