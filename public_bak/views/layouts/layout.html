@@ -1,0 +1,26 @@
+<div>
+    <div class="checkbox" data-ng-model="constHeight" onchange="angular.element(this).scope().setCheck(this)">
+        <label>
+            <input type="checkbox">Constraint Height
+        </label>
+    </div>
+
+    <button type="button" class="btn btn-success icon-plus-sign" data-ng-click="addCol()"></button>
+    <button type="button" class="btn btn-success icon-minus-sign" data-ng-click="deleteCol()"></button>
+    <input type="number" data-ng-repeat="col in colList">
+
+    <div class="lyrow ui-draggable">
+        <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
+        <span class="drag label">
+            <i class="icon-move"></i>Drag</span>
+
+        <div class="preview">
+            <input ng-model="colText" type="text">
+        </div>
+        <div class="view">
+            <div class="row-fluid clearfix">
+                <div class="column" ng-class="colStyle"></div>
+            </div>
+        </div>
+    </div>
+</div>
