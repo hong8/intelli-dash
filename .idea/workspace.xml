@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b305129-47ef-40d5-8d7a-85a5a08dbe6b" name="Default" comment="commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.slugignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/articles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/404.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/500.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/includes/head.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/index.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/default.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/auth.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/signin.jade" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/signup.jade" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/CONTRIBUTING.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/LICENSE" afterPath="" />
@@ -229,9 +216,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/tests/navbar-static-top.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/tests/navbar.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/bootstrap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/middlewares/authorization.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/css/views/articles.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/CONTRIBUTING.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/LICENSE" afterPath="" />
@@ -446,184 +430,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/tests/navbar-static-top.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/tests/navbar.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/bootstrap/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/create.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/view.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.gzip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-cookies/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-cookies/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-mocks/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-resource/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-resource/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-route/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/.bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-ui-utils/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/.bower.json" afterPath="$PROJECT_DIR$/bower_components/bootstrap/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/bower_components/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/.bower.json" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/.bower.json" afterPath="$PROJECT_DIR$/public/lib/angular-ui-utils/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/.bower.json" afterPath="$PROJECT_DIR$/public/lib/bootstrap/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.nodemonignore" afterPath="$PROJECT_DIR$/.nodemonignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/.travis.yml" afterPath="$PROJECT_DIR$/bower_components/angular-ui-utils/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/passport/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/.travis.yml" afterPath="$PROJECT_DIR$/public/lib/angular-ui-utils/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/404.html" afterPath="$PROJECT_DIR$/app/views/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/500.html" afterPath="$PROJECT_DIR$/app/views/500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/bower_components/bootstrap/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/LICENSE" afterPath="$PROJECT_DIR$/public/lib/bootstrap/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/README.md" afterPath="$PROJECT_DIR$/bower_components/bootstrap/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/README.md" afterPath="$PROJECT_DIR$/bower_components/jquery/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/README.md" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/README.md" afterPath="$PROJECT_DIR$/node_modules/passport/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/README.md" afterPath="$PROJECT_DIR$/public/lib/bootstrap/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/Readme.md" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/bin/_mocha" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/bin/_mocha" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/alerts.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/env/all.js" afterPath="$PROJECT_DIR$/config/env/all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-cookies/angular-cookies.js" afterPath="$PROJECT_DIR$/bower_components/angular-cookies/angular-cookies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-cookies/angular-cookies.min.js" afterPath="$PROJECT_DIR$/bower_components/angular-cookies/angular-cookies.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-mocks/angular-mocks.js" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/angular-mocks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.js" afterPath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.min.js.map" afterPath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.min.js" afterPath="$PROJECT_DIR$/bower_components/angular-resource/angular-resource.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/angular-route.js" afterPath="$PROJECT_DIR$/bower_components/angular-route/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/angular-route.min.js.map" afterPath="$PROJECT_DIR$/bower_components/angular-route/angular-route.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/angular-route.min.js" afterPath="$PROJECT_DIR$/bower_components/angular-route/angular-route.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.js" afterPath="$PROJECT_DIR$/bower_components/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/angular.min.js" afterPath="$PROJECT_DIR$/bower_components/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/lib/async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/auth.html" afterPath="$PROJECT_DIR$/app/views/users/auth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/base.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-cookies/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-cookies/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-mocks/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-mocks/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-resource/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-resource/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-route/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-route/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-ui-utils/bower.json" afterPath="$PROJECT_DIR$/bower_components/angular-ui-utils/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/bower.json" afterPath="$PROJECT_DIR$/bower_components/bootstrap/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/bower.json" afterPath="$PROJECT_DIR$/bower_components/jquery/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/bower.json" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-ui-utils/bower.json" afterPath="$PROJECT_DIR$/public/lib/angular-ui-utils/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/bower.json" afterPath="$PROJECT_DIR$/public/lib/bootstrap/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/button-groups.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/buttons.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/carousel.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/close.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/code.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/component-animations.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/component.json" afterPath="$PROJECT_DIR$/bower_components/jquery/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/composer.json" afterPath="$PROJECT_DIR$/bower_components/jquery/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/tasks/concurrent.js" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/tasks/concurrent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.html" afterPath="$PROJECT_DIR$/app/views/layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/dropdowns.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/express.js" afterPath="$PROJECT_DIR$/config/express.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.html" afterPath="$PROJECT_DIR$/app/views/includes/foot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/grid.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gruntfile.js" afterPath="$PROJECT_DIR$/gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/head.html" afterPath="$PROJECT_DIR$/app/views/includes/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.html" afterPath="$PROJECT_DIR$/app/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/lib/passport/index.js" afterPath="$PROJECT_DIR$/node_modules/passport/lib/passport/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/media.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/mixins.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/mocha.css" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/mocha.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/mocha.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/mocha.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/tasks/mocha.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/tasks/mocha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/modals.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/ms.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/ms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/navbar.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/navs.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/package.json" afterPath="$PROJECT_DIR$/bower_components/jquery/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/node_modules/async/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/commander/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/debug/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/diff/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/diff/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/glob/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/glob/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/node_modules/commander/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/jade/node_modules/mkdirp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/node_modules/mkdirp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/node_modules/passport/node_modules/pause/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/pager.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/pagination.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/passport.js" afterPath="$PROJECT_DIR$/config/passport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/popovers.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/progress-bars.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/browser/progress.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/browser/progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects.js" afterPath="$PROJECT_DIR$/app/controllers/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/projects.js" afterPath="$PROJECT_DIR$/public/js/controllers/projects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-concurrent/readme.md" afterPath="$PROJECT_DIR$/node_modules/grunt-concurrent/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/runnable.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/runnable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/runner.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/runner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/scaffolding.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/signin.html" afterPath="$PROJECT_DIR$/app/views/users/signin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/signup.html" afterPath="$PROJECT_DIR$/app/views/users/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/spec.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/tables.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/thumbnails.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/tooltip.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/type.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap-tpls.js" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap-tpls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.js" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap.js" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.min.js" afterPath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap.min.js" afterPath="$PROJECT_DIR$/public/lib/angular-bootstrap/ui-bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/utilities.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/variables.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/bower_components/bootstrap/less/wells.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/lib/bootstrap/less/wells.less" afterPath="$PROJECT_DIR$/public/lib/bootstrap/less/wells.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/xunit.js" afterPath="$PROJECT_DIR$/node_modules/grunt-mocha-test/node_modules/mocha/lib/reporters/xunit.js" />
     </list>
     <ignored path="intelli-dash.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -646,37 +453,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="development.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/env/development.js">
+      <file leaf-file-name="projects.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="27" column="28" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services/global.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="30" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="express.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/express.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="37" selection-start="3203" selection-end="3203" vertical-scroll-proportion="2.8107345" vertical-offset="535" max-vertical-offset="1710">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passport.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/passport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="7" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3180">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="projects.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/controllers/projects.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="8" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/projects.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="3" selection-start="477" selection-end="477" vertical-scroll-proportion="0.41958043" vertical-offset="180" max-vertical-offset="1635">
+            <state line="30" column="18" selection-start="639" selection-end="639" vertical-scroll-proportion="-6.923077" vertical-offset="270" max-vertical-offset="1635">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/project.js">
+      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="6" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+            <state line="35" column="19" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="1600" max-vertical-offset="2055">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="48" selection-start="123" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="1620">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1215">
               <folding />
             </state>
           </provider>
@@ -700,7 +561,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.jshintrc" />
         <option value="$PROJECT_DIR$/.slugignore" />
         <option value="$PROJECT_DIR$/public/css/common.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/default.html" />
@@ -716,6 +576,7 @@
         <option value="$PROJECT_DIR$/app/views/users/signup.html" />
         <option value="$PROJECT_DIR$/public/js/controllers/projects.js" />
         <option value="$PROJECT_DIR$/app/controllers/projects.js" />
+        <option value="$PROJECT_DIR$/app/models/project.js" />
       </list>
     </option>
   </component>
@@ -723,7 +584,7 @@
     <option name="x" value="64" />
     <option name="y" value="-4" />
     <option name="width" value="1537" />
-    <option name="height" value="905" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -879,7 +740,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,8 +757,18 @@
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="env" />
+              <option name="myItemId" value="intelli-dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intelli-dash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -915,7 +786,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -933,69 +804,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intelli-dash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="middlewares" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1143,16 +956,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1537" height="905" extended-state="6" />
+    <frame x="64" y="-4" width="1537" height="829" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37660667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41737893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2781759" sideWeight="0.6233933" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2781759" sideWeight="0.5826211" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1183,83 +996,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="27" selection-end="27" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="226" selection-end="226" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/foot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="66" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-11.083333" vertical-offset="139" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="44" selection-start="2099" selection-end="2099" vertical-scroll-proportion="-11.083333" vertical-offset="289" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="86" selection-end="172" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="660" selection-end="660" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1365">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/express.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="31" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2775" selection-end="2775" vertical-scroll-proportion="0.8021978" vertical-offset="1135" max-vertical-offset="1590">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="433" selection-end="433" vertical-scroll-proportion="0.27842227" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="10" selection-start="104" selection-end="104" vertical-scroll-proportion="0.06960557" vertical-offset="0" max-vertical-offset="431">
@@ -1274,23 +1010,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/controllers/projects.js">
+    <entry file="file://$PROJECT_DIR$/app/models/component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="8" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+        <state line="21" column="21" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="455">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="3" selection-start="477" selection-end="477" vertical-scroll-proportion="0.41958043" vertical-offset="180" max-vertical-offset="1635">
+        <state line="30" column="18" selection-start="639" selection-end="639" vertical-scroll-proportion="-6.923077" vertical-offset="270" max-vertical-offset="1635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="30" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="430">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="48" selection-start="123" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="1165" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="19" selection-start="647" selection-end="647" vertical-scroll-proportion="0.0" vertical-offset="1600" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="7" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="3180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="37" selection-start="3203" selection-end="3203" vertical-scroll-proportion="2.8107345" vertical-offset="535" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>
