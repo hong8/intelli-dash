@@ -7,7 +7,6 @@ var mongoose = require('mongoose'),
     Project = mongoose.model('Project'),
     _ = require('lodash');
 
-
 /**
  * Find project by id
  */

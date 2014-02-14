@@ -39,4 +39,13 @@ ProjectSchema.path('name').validate(function(name) {
     return name.length;
 }, 'Name cannot be blank');
 
+/**
+ * Statics
+ */
+ProjectSchema.statics.load = function(id, cb) {
+    this.findOne({
+        _id: id
+    }).populate('owner', 'name username').exec(cb);
+};
+
 mongoose.model('Project', ProjectSchema);

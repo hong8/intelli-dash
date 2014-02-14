@@ -10,7 +10,7 @@
     <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
             <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}"
-            ng-class="{active: $uiRoute}">
+                ng-class="{active: $uiRoute}">
                 <a href="#!/{{item.link}}">{{item.title}}</a>
             </li>
             <!--<li class="dropdown">-->

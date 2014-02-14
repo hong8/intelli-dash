@@ -14,5 +14,11 @@ angular.module('intelli-dash.system').controller('HeaderController', ['$scope', 
         }
     ];
 
+    $scope.collapse = function( flag )
+    {
+        aler(flag)
+        this.isCollapsed = flag;
+    }
+
     $scope.isCollapsed = false;
 }]);
