@@ -61,6 +61,8 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
         }
         project.updated.push(new Date().getTime());
 
+        console.log(project);
+        
         project.$update(function() {
             $location.path('projects/' + project._id);
         });
