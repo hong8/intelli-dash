@@ -46,6 +46,7 @@ exports.update = function(req, res) {
     var project = req.project;
 
     project = _.extend(project, req.body);
+    project.owner = req.user;
 
     project.save(function(err) {
         if (err) {
