@@ -56,12 +56,12 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
 
     $scope.update = function() {
         var project = $scope.project;
+        project.category = $scope.category['value'];
+        
         if (!project.updated) {
             project.updated = [];
         }
         project.updated.push(new Date().getTime());
-
-        $scope.category = $scope.categories[project.category];
         
         project.$update(function() {
             $location.path('projects/' + project._id);
