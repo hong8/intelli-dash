@@ -6,19 +6,19 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.init = function() {
         this.categories = [{
             name: 'Dashboard',
-            value: 1
+            value: 0
         }, {
             name: 'Home Page',
-            value: 2
+            value: 1
         }, {
             name: 'Blog',
-            value: 3
+            value: 2
         }, {
             name: 'Board',
-            value: 4
+            value: 3
         }, {
             name: 'Chat',
-            value: 5
+            value: 4
         }];
         this.category = this.categories[0];
     }
@@ -79,6 +79,8 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             projectId: $routeParams.projectId
         }, function(project) {
             $scope.project = project;
+            
+            this.category = this.categories[project.category];
         });
     };
 }]);
