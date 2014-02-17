@@ -80,8 +80,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
         }, function(project) {
             $scope.project = project;
             
-            this.category = this.categories[project.category];
-            console.log(this.category);
+            $scope.category = $scope.categories[project.category];
         });
     };
 }]);
