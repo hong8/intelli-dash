@@ -3,11 +3,11 @@
     <span>{{project.owner.name}}</span>
     <h2>{{project.name}}</h2>
     <div data-ng-show="global.user._id == project.owner._id">
-        <a class="btn" href="/#!/projects/{{project._id}}/edit">
-        	<i class="icon-edit"></i>
+        <a class="btn btn-default" href="/#!/projects/{{project._id}}/edit">
+        	<i class="glyphicon glyphicon-edit"></i>
         </a> 
-        <a class="btn" data-ng-click="remove();">
-            <i class="icon-trash"></i>
+        <a class="btn btn-danger" data-ng-click="remove();">
+            <i class="glyphicon glyphicon-trash"></i>
         </a>
     </div>
     <div>{{project.description}}</div>
