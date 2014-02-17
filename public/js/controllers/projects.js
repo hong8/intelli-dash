@@ -61,7 +61,7 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
         }
         project.updated.push(new Date().getTime());
 
-        console.log(project);
+        $scope.category = $scope.categories[project.category];
         
         project.$update(function() {
             $location.path('projects/' + project._id);
@@ -81,7 +81,6 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
             projectId: $routeParams.projectId
         }, function(project) {
             $scope.project = project;
-            
             $scope.category = $scope.categories[project.category];
         });
     };
