@@ -16,16 +16,16 @@ angular.module('intelli-dash').config(['$routeProvider',
         when('/projects/:projectId/edit', {
             templateUrl: 'views/projects/edit.html'
         }).
-        when('/projects/:projectId/group', {
+        when('/projects/:projectId/groups', {
             templateUrl: 'views/groups/list.html'
         }).
-        when('/projects/:projectId/page', {
+        when('/projects/:projectId/pages', {
             templateUrl: 'views/pages/list.html'
         }).
-        when('/projects/:projectId/page/create', {
+        when('/projects/:projectId/pages/create', {
             templateUrl: 'views/pages/create.html'
         }).
-        when('/projects/:projectId/page/:pageId', {
+        when('/projects/:projectId/pages/:pageId', {
             templateUrl: 'views/pages/edit.html'
         }).
         when('/', {
