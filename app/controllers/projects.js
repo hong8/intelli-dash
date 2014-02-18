@@ -91,7 +91,7 @@ exports.show = function(req, res) {
  * List of Projects
  */
 exports.all = function(req, res) {
-    Project.find().sort('-created').populate('user', 'name nick_name').exec(function(err, projects) {
+    Project.find().sort('-created').populate('owner', 'name nick_name').exec(function(err, projects) {
         if (err) {
             res.render('error', {
                 status: 500
