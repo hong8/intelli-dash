@@ -3,7 +3,7 @@
 		<li data-ng-repeat="page in pages">
 			<span>{{page.created | date:'medium'}}</span> /
 			<span>{{page.owner.name}}</span>
-			<h2><a data-ng-href="#!/projects/{{global.data.project._id}}/page/{{page._id}}">{{page.name}}</a></h2>
+			<h2><a data-ng-href="#!/projects/{{$routeParams.projectId}}/page/{{page._id}}">{{page.name}}</a></h2>
 			<div>{{page.view_name}}</div>
 			<div>{{page.description}}</div>
 			<input type="text" value="{{page.use_yn}}"/>Use

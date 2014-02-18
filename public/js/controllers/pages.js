@@ -57,9 +57,8 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
     $scope.find = function() {
         Pages.query(function(pages) {
             $scope.pages = pages;
-            
-            $scope.$routeParams = $routeParams;
         });
+        $scope.$routeParams = $routeParams;
     };
 
     $scope.findOne = function() {
