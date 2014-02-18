@@ -22,7 +22,10 @@ var PageSchema = new Schema({
         type: Schema.ObjectId,
         ref: 'User'
     },
-    upper_page: String,
+    upper_page: {
+        type: Schema.ObjectId,
+        ref: 'Page'
+    },
     use_yn: Boolean
 });
 
@@ -39,7 +42,7 @@ PageSchema.path('name').validate(function(name) {
 PageSchema.statics.load = function(id, cb) {
     this.findOne({
         _id: id
-    }).populate('view_name').exec(cb);
+    }).populate('name').exec(cb);
 };
 
 mongoose.model('Page', PageSchema);

@@ -1,0 +1,13 @@
+<section data-ng-controller="PageController">
+	<ul class="pages unstyled">
+		<li data-ng-repeat="page in pages">
+			<span>{{page.created | date:'medium'}}</span> /
+			<span>{{page.owner.name}}</span>
+			<h2><a data-ng-href="#!/projects/{{project._id}}/page/{{page._id}}">{{page.name}}</a></h2>
+			<div>{{page.view_name}}</div>
+			<div>{{page.description}}</div>
+			<input type="text" name="" value="{{page.use_yn}}"/>
+		</li>
+	</ul>
+	<h1 data-ng-hide="!project.pages || project.pages.length">No pages yet. <br> Why don't you <a href="/#!/projects/{{project._id}}/page">Create One</a>?</h1>
+</section>

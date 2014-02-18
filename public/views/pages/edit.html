@@ -1,32 +1,36 @@
-<section data-ng-controller="ProjectController" data-ng-init="findOne()">
-    <form class="form-horizontal col-md-6" role="form" data-ng-submit="update()">
+<section data-ng-controller="PageController">
+    <form class="form-horizontal col-md-6" role="form" data-ng-submit="saveOrUpdate()">
         <div class="form-group">
             <label for="inputName" class="control-label">Name</label>
             <div class="controls">
-                <input type="text" data-ng-model="project.name" class="form-control" id="inputName"
+                <input type="text" data-ng-model="page.name" class="form-control" id="inputName"
                 placeholder="Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputViewName" class="control-label">View Name</label>
+            <div class="controls">
+                <input type="text" data-ng-model="page.view_name" class="form-control"
+                id="inputViewName" placeholder="View Name">
             </div>
         </div>
         <div class="form-group">
             <label for="inputDesc" class="control-label">Description</label>
             <div class="controls">
-                <input type="text" data-ng-model="project.description" class="form-control"
+                <input type="text" data-ng-model="page.description" class="form-control"
                 id="inputDesc" placeholder="Description">
             </div>
         </div>
         <div class="form-group">
-            <label for="select" class="control-label">Category</label>
+            <label for="select" class="control-label">Upper Page</label>
             <div class="controls">
-                <select class="form-control" data-ng-model="category" data-ng-options="category.name for category in categories"
+                <select class="form-control" data-ng-model="upperPage" data-ng-options="page.name for page in pages"
                 id="select"></select>
             </div>
         </div>
         <div class="form-group" data-ng-show="global.user._id == project.owner._id">
-            <a class="btn btn-success" href="/#!/projects/{{project._id}}/group">
-            	<i class="glyphicon glyphicon-group"></i>
-            </a> 
-            <a class="btn btn-warning" href="/#!/projects/{{project._id}}/page">
-                <i class="glyphicon glyphicon-book"></i>
+            <a class="btn btn-danger" data-ng-click="remove();">
+                <i class="glyphicon glyphicon-trash"></i>
             </a>
         </div>
         <div class="form-group">

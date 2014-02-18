@@ -26,8 +26,12 @@ var ProjectSchema = new Schema({
         ref: 'User'
     },
     groups: [{
-        type: Number,
-        ref: 'Group'
+        type: Schema.ObjectId,
+        ref: 'Page'
+    }],
+    pages: [{
+        type: Schema.ObjectId,
+        ref: 'Page'
     }],
     use_yn: Boolean
 });
