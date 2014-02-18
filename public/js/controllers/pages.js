@@ -10,16 +10,19 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
     $scope.create = function() {
         var page = new Pages({
             name: this.name,
+            view_name: this.view_name,
             description: this.description,
-            page: this.page['value']
+            project: $scope.global.data.project,
+            upper_page: null
         });
         page.$save(function(page) {
-            $location.path('pages/' + page._id);
+            $location.path('projects/' + $scope.global.data.project._id + '/pages/' + page._id);
         });
         
         this.name = '';
+        this.view_name = '';
         this.description = '';
-        this.page = this.pages[0];
+        this.upper_page = null;
     };
 
     $scope.remove = function(page) {
@@ -47,7 +50,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         page.updated.push(new Date().getTime());
         
         page.$update(function() {
-            $location.path('pages/' + page._id);
+            $location.path('projects/' + $scope.global.data.project._id + '/pages/' + page._id);
         });
     };
 
