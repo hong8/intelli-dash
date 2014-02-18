@@ -21,8 +21,7 @@ module.exports = function(app) {
     app.put('/projects/:projectId/pages/:pageId', authorization.requiresLogin, hasAuthorization, pages.update);
     app.del('/projects/:projectId/pages/:pageId', authorization.requiresLogin, hasAuthorization, pages.destroy);
 
-    // Finish with setting up the pageId, pageId param
-    app.param('projectId', projects.project);
+    // Finish with setting up the pageId param
     app.param('pageId', pages.page);
 
 };
