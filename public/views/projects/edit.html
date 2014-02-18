@@ -21,18 +21,19 @@
                 id="select"></select>
             </div>
         </div>
-        <div class="form-group" data-ng-show="global.user._id == project.owner._id">
-            <a class="btn btn-success" href="/#!/projects/{{project._id}}/group">
-            	<i class="glyphicon glyphicon-group"></i>
+        <div class="form-group" >
+            <a class="btn btn-success" href="/#!/projects/{{project._id}}/group" title="Group">
+            	<i class="glyphicon glyphicon-inbox"></i>
             </a> 
-            <a class="btn btn-warning" href="/#!/projects/{{project._id}}/page">
-                <i class="glyphicon glyphicon-book"></i>
+            <a class="btn btn-warning" href="/#!/projects/{{project._id}}/page" title="Page">
+                <i class="glyphicon glyphicon-list-alt"></i>
             </a>
         </div>
         <div class="form-group">
             <div class="controls">
                 <button class="btn btn-default">Cancel</button>
                 <button type="submit" class="btn btn-primary">Save</button>
+                <button class="btn btn-danger" data-ng-click="remove();">Remove</button>
             </div>
         </div>
     </form>

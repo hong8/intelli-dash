@@ -3,7 +3,7 @@
 		<li data-ng-repeat="project in projects">
 			<span>{{project.created | date:'medium'}}</span> /
 			<span>{{project.owner.name}}</span>
-			<h2><a data-ng-href="#!/projects/{{project._id}}">{{project.name}}</a></h2>
+			<h2><a data-ng-href="#!/projects/{{project._id}}/edit">{{project.name}}</a></h2>
 			<div>{{project.description}}</div>
 		</li>
 	</ul>

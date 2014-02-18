@@ -1,5 +1,5 @@
-<section data-ng-controller="PageController">
-    <form class="form-horizontal col-md-6" role="form" data-ng-submit="saveOrUpdate()">
+<section data-ng-controller="PageController" data-ng-init="findOne()">
+    <form class="form-horizontal col-md-6" role="form" data-ng-submit="update()">
         <div class="form-group">
             <label for="inputName" class="control-label">Name</label>
             <div class="controls">
@@ -22,21 +22,16 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="select" class="control-label">Upper Page</label>
+            <label for="buttonSelUpper" class="control-label">Upper Page</label>
             <div class="controls">
-                <select class="form-control" data-ng-model="upperPage" data-ng-options="page.name for page in pages"
-                id="select"></select>
+                <button id="buttonSelUpper" type="submit" class="btn btn-default">Select</button>
             </div>
         </div>
         <div class="form-group" data-ng-show="global.user._id == project.owner._id">
-            <a class="btn btn-danger" data-ng-click="remove();">
-                <i class="glyphicon glyphicon-trash"></i>
-            </a>
-        </div>
-        <div class="form-group">
             <div class="controls">
                 <button class="btn btn-default">Cancel</button>
                 <button type="submit" class="btn btn-primary">Save</button>
+                <button class="btn btn-danger" data-ng-click="remove();">Remove</button>
             </div>
         </div>
     </form>

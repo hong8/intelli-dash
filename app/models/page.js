@@ -18,9 +18,9 @@ var PageSchema = new Schema({
     name: String,
     view_name: String,
     description: String,
-    owner: {
+    project: {
         type: Schema.ObjectId,
-        ref: 'User'
+        ref: 'Project'
     },
     upper_page: {
         type: Schema.ObjectId,

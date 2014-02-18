@@ -82,6 +82,9 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
         }, function(project) {
             $scope.project = project;
             $scope.category = $scope.categories[project.category];
+
+            $scope.global.data = {};
+            $scope.global.data.project = project;
         });
     };
 }]);
