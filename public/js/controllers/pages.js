@@ -12,11 +12,11 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             name: this.name,
             view_name: this.view_name,
             description: this.description,
-            project: $scope.global.data.project,
+            project: $routeParams.projectId,
             upper_page: null
         });
         page.$save(function(page) {
-            $location.path('projects/' + $scope.global.data.project._id + '/pages/' + page._id);
+            $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
         });
         
         this.name = '';
@@ -50,7 +50,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         page.updated.push(new Date().getTime());
         
         page.$update(function() {
-            $location.path('projects/' + $scope.global.data.project._id + '/pages/' + page._id);
+            $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
         });
     };
 

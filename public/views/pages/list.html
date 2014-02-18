@@ -9,5 +9,5 @@
 			<input type="text" value="{{page.use_yn}}"/>Use
 		</li>
 	</ul>
-	<h1 data-ng-hide="!global.data.project.pages || global.data.project.pages.length">No pages yet. <br> Why don't you <a href="/#!/projects/{{global.data.project._id}}/page/create">Create One</a>?</h1>
+	<h1 data-ng-hide="!global.data.project.pages || global.data.project.pages.length">No pages yet. <br> Why don't you <a href="/#!/projects/{{$routeParams.projectId}}/page/create">Create One</a>?</h1>
 </section>
