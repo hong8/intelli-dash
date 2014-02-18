@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 var mongoose = require('mongoose'),
-    Project = mongoose.model('Page'),
+    Page = mongoose.model('Page'),
     _ = require('lodash');
 
 /**
