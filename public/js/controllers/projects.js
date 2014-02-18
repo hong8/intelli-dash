@@ -71,6 +71,8 @@ angular.module('intelli-dash.projects').controller('ProjectController', ['$scope
     $scope.find = function() {
         Projects.query(function(projects) {
             $scope.projects = projects;
+            
+            $scope.$routeParams = $routeParams;
         });
     };
 
