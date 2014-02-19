@@ -91,7 +91,9 @@ exports.show = function(req, res) {
  * List of Pages
  */
 exports.all = function(req, res) {
-    Page.find().sort('-created').populate('owner', 'name nick_name').exec(function(err, pages) {
+    var page = req.page;
+    
+    Page.find({project: page.project}).sort('-created').populate('owner', 'name nick_name').exec(function(err, pages) {
         if (err) {
             res.render('error', {
                 status: 500
