@@ -1,0 +1,15 @@
+<section data-ng-controller="PageController" data-ng-init="findOne()">
+    <span>{{page.created | date:'medium'}}</span>/
+    <span>{{page.owner.name}}</span>
+    <h2>{{page.name}}</h2>
+    <div>{{page.view_name}}</div>
+    <div data-ng-show="global.user._id == page.owner._id">
+        <a class="btn btn-default" href="/#!/projects/{{$routeParams.projectId}}/page/{{page._id}}">
+        	<i class="glyphicon glyphicon-edit"></i>
+        </a> 
+        <a class="btn btn-danger" data-ng-click="remove();">
+            <i class="glyphicon glyphicon-trash"></i>
+        </a>
+    </div>
+    <div>{{page.description}}</div>
+</section>
