@@ -91,8 +91,7 @@ exports.show = function(req, res) {
  * List of Pages
  */
 exports.all = function(req, res) {
-    var page = req.page;
-    console.log(page);
+    console.log(req);
     
     Page.find({project: page.project}).sort('-created').populate('owner', 'name nick_name').exec(function(err, pages) {
         if (err) {
