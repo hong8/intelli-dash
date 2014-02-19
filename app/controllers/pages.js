@@ -92,6 +92,7 @@ exports.show = function(req, res) {
  */
 exports.all = function(req, res) {
     var page = req.page;
+    console.log(page);
     
     Page.find({project: page.project}).sort('-created').populate('owner', 'name nick_name').exec(function(err, pages) {
         if (err) {
