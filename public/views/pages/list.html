@@ -3,12 +3,16 @@
 		<li data-ng-repeat="page in pages">
 			<span>{{page.created | date:'medium'}}</span> /
 			<span>{{page.owner.name}}</span>
-			<h2><a data-ng-href="#!/projects/{{$routeParams.projectId}}/page/{{page._id}}">{{page.name}}</a></h2>
+			<h2><a data-ng-href="#!/projects/{{$routeParams.projectId}}/pages/{{page._id}}/edit">{{page.name}}</a></h2>
 			<div>{{page.view_name}}</div>
 			<div>{{page.description}}</div>
-			<input type="text" value="{{page.use_yn}}"/>Use
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="{{page.use_yn}}">Use Flag
+                </label>
+            </div>
 		</li>
 	</ul>
-	<h1 data-ng-hide="!pages || pages.length == 0">No pages yet. <br> Why don't you <a href="/#!/projects/{{$routeParams.projectId}}/pages/create">Create One</a>?</h1>
-	<h1 data-ng-hide="pages && pages.length > 0">You can create page. <br> Would you <a href="/#!/projects/{{$routeParams.projectId}}/pages/create">Create One another</a>?</h1>
+	<h1 data-ng-show="!pages || pages.length == 0">No pages yet. <br> Why don't you <a href="/#!/projects/{{$routeParams.projectId}}/pages/create">Create One</a>?</h1>
+	<h1 data-ng-show="pages && pages.length > 0">You can create page. <br> Would you <a href="/#!/projects/{{$routeParams.projectId}}/pages/create">Create One another</a>?</h1>
 </section>

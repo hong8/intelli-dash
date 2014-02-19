@@ -46,7 +46,7 @@ PageSchema.path('name').validate(function(name) {
 PageSchema.statics.load = function(id, cb) {
     this.findOne({
         _id: id
-    }).populate('name').exec(cb);
+    }).populate('owner', 'name username').exec(cb);
 };
 
 mongoose.model('Page', PageSchema);
