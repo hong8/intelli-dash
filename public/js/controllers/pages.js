@@ -37,7 +37,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         }
         else {
             $scope.page.$remove();
-            $location.path('pages');
+            $location.path('projects/' + $routeParams.projectId + '/pages');
         }
     };
 
