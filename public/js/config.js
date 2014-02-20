@@ -31,6 +31,9 @@ angular.module('intelli-dash').config(['$routeProvider',
         when('/projects/:projectId/pages/:pageId/edit', {
             templateUrl: 'views/pages/edit.html'
         }).
+        when('/projects/:projectId/pages/:pageId/design', {
+            templateUrl: 'views/designs/design.html'
+        }).
         when('/', {
             templateUrl: 'views/index.html'
         }).

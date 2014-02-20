@@ -19,7 +19,8 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             projectId: $routeParams.projectId,
             pageId: $routeParams.pageId
         }, function(page) {
-            $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
+            //$location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
+            $location.path('projects/' + $routeParams.projectId + '/pages');
         });
 
         this.name = '';
@@ -62,7 +63,8 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             projectId: $routeParams.projectId,
             pageId: $routeParams.pageId
         }, function() {
-            $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
+            //$location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
+            $location.path('projects/' + $routeParams.projectId + '/pages');
         });
     };
 

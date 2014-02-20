@@ -11235,7 +11235,7 @@ function qFactory(nextTick, exceptionHandler) {
 /**
  * DESIGN NOTES
  *
- * The design decisions behind the scope are heavily favored for speed and memory consumption.
+ * The designs decisions behind the scope are heavily favored for speed and memory consumption.
  *
  * The typical use of scope is to watch the expressions, which most of the time return the same
  * value as last time so we optimize the operation.
@@ -17716,7 +17716,7 @@ var ngCloakDirective = ngDirective({
  *
  * @description
  * The `ngController` directive attaches a controller class to the view. This is a key aspect of how angular
- * supports the principles behind the Model-View-Controller design pattern.
+ * supports the principles behind the Model-View-Controller designs pattern.
  *
  * MVC components in angular:
  *

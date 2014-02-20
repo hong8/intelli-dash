@@ -5,6 +5,9 @@
     <div>{{page.view_name}}</div>
     <div>{{page.description}}</div>
     <div data-ng-show="global.user._id == page.owner._id">
+        <a class="btn btn-default" href="/#!/projects/{{$routeParams.projectId}}/pages/{{page._id}}/design">
+            <i class="glyphicon glyphicon-picture"></i>
+        </a>
         <a class="btn btn-default" href="/#!/projects/{{$routeParams.projectId}}/pages/{{page._id}}/edit">
         	<i class="glyphicon glyphicon-edit"></i>
         </a> 
