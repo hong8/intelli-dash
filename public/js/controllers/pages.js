@@ -78,5 +78,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         }, function(page) {
             $scope.page = page;
         });
+        
+        $scope.$routeParams = $routeParams;
     };
 }]);
