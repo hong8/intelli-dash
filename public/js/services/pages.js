@@ -4,7 +4,7 @@
 angular.module('intelli-dash.pages').factory('Pages', ['$resource', function($resource) {
     return $resource('projects/:projectId/pages/:pageId', {
         projectId: '@projectId',
-        pageId: '@pageId'
+        pageId: '@_id'
     }, {
         update: {
             method: 'PUT'
