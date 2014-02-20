@@ -55,7 +55,8 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
     };
 
     $scope.find = function() {
-        Pages.query(function(pages) {
+        Pages.query({
+            projectId: $routeParams.projectId}, function(pages) {
             $scope.pages = pages;
         });
         $scope.$routeParams = $routeParams;
@@ -65,6 +66,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         $scope.init();
         
         Pages.get({
+            projectId: $routeParams.projectId,
             pageId: $routeParams.pageId
         }, function(page) {
             $scope.page = page;
