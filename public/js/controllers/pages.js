@@ -15,10 +15,13 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             project: $routeParams.projectId,
             upper_page: null
         });
-        page.$save(function(page) {
+        page.$save({
+            projectId: $routeParams.projectId,
+            pageId: $routeParams.pageId
+        }, function(page) {
             $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
         });
-        
+
         this.name = '';
         this.view_name = '';
         this.description = '';
@@ -48,15 +51,19 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             page.updated = [];
         }
         page.updated.push(new Date().getTime());
-        
-        page.$update(function() {
+
+        page.$update({
+            projectId: $routeParams.projectId,
+            pageId: $routeParams.pageId
+        }, function() {
             $location.path('projects/' + $routeParams.projectId + '/pages/' + page._id);
         });
     };
 
     $scope.find = function() {
         Pages.query({
-            projectId: $routeParams.projectId}, function(pages) {
+            projectId: $routeParams.projectId
+        }, function(pages) {
             $scope.pages = pages;
         });
         $scope.$routeParams = $routeParams;
@@ -64,7 +71,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
 
     $scope.findOne = function() {
         $scope.init();
-        
+
         Pages.get({
             projectId: $routeParams.projectId,
             pageId: $routeParams.pageId
