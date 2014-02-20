@@ -30,7 +30,10 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
 
     $scope.remove = function(page) {
         if (page) {
-            page.$remove();
+            page.$remove({
+                projectId: $routeParams.projectId,
+                pageId: $routeParams.pageId
+            });
 
             for (var i in $scope.pages) {
                 if ($scope.pages[i] === page) {
@@ -39,7 +42,10 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
             }
         }
         else {
-            $scope.page.$remove();
+            $scope.page.$remove({
+                projectId: $routeParams.projectId,
+                pageId: $routeParams.pageId
+            });
             $location.path('projects/' + $routeParams.projectId + '/pages');
         }
     };
@@ -78,7 +84,7 @@ angular.module('intelli-dash.pages').controller('PageController', ['$scope', '$r
         }, function(page) {
             $scope.page = page;
         });
-        
+
         $scope.$routeParams = $routeParams;
     };
 }]);
