@@ -1,62 +1,44 @@
 <section class="design">
 <div style="min-height: 660px; cursor: auto;" class="edit">
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <button data-target=".nav-collapse" data-toggle="collapse" class="btn glyphicon glyphicon-flash"
-                    type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-            <div class="nav-collapse collapse">
-                <ul class="nav" id="menu-layoutit">
-                    <li class="divider-vertical"></li>
-                    <li>
-                        <div class="btn-group">
-                            <a class="btn btn-primary" href="http://justjavac.com" target="_blank"><i
-                                    class="icon-home icon-white"></i>Home</a>
-                        </div>
-                        <div class="btn-group" data-toggle="buttons-radio">
-                            <button type="button" id="edit" class="btn btn-primary active">
-                                <i class="icon-edit icon-white"></i>Editor
-                            </button>
-                            <button type="button" class="btn btn-primary" id="devpreview">
-                                <i class="icon-eye-close icon-white"></i>Layout Editor
-                            </button>
-                            <button type="button" class="btn btn-primary"
-                                    id="sourcepreview">
-                                <i class="icon-eye-open icon-white"></i>Preview
-                            </button>
-                        </div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary" data-target="#downloadModal"
-                                    rel="/build/downloadModal" role="button" data-toggle="modal">
-                                <i class="icon-chevron-down icon-white"></i>Download
-                            </button>
-                            <button class="btn btn-primary" href="/share/index"
-                                    role="button" data-toggle="modal" data-target="#shareModal">
-                                <i class="icon-share icon-white"></i>Save
-                            </button>
-                            <button class="btn btn-primary" href="#clear" id="clear">
-                                <i class="icon-trash icon-white"></i>Empty
-                            </button>
-                        </div>
-                        <div class="btn-group">
-                            <button class="btn btn-primary" href="#undo" id="undo">
-                                <i class="icon-arrow-left icon-white"></i>Revocation
-                            </button>
-                            <button class="btn btn-primary" href="#redo" id="redo">
-                                <i class="icon-arrow-right icon-white"></i>Redo
-                            </button>
-                        </div>
-                    </li>
-                </ul>
+<div>
+    <ul class="nav" id="menu-layoutit">
+        <li class="divider-vertical"></li>
+        <li>
+            <div class="btn-group" data-toggle="buttons-radio">
+                <button type="button" id="edit" class="btn btn-primary active">
+                    <i class="icon-edit icon-white"></i>Editor
+                </button>
+                <button type="button" class="btn btn-primary" id="devpreview">
+                    <i class="icon-eye-close icon-white"></i>Layout Editor
+                </button>
+                <button type="button" class="btn btn-primary"
+                        id="sourcepreview">
+                    <i class="icon-eye-open icon-white"></i>Preview
+                </button>
             </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-target="#downloadModal"
+                        rel="/build/downloadModal" role="button" data-toggle="modal">
+                    <i class="icon-chevron-down icon-white"></i>Download
+                </button>
+                <button class="btn btn-primary" href="/share/index"
+                        role="button" data-toggle="modal" data-target="#shareModal">
+                    <i class="icon-share icon-white"></i>Save
+                </button>
+                <button class="btn btn-primary" href="#clear" id="clear">
+                    <i class="icon-trash icon-white"></i>Empty
+                </button>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-primary" href="#undo" id="undo">
+                    <i class="icon-arrow-left icon-white"></i>Revocation
+                </button>
+                <button class="btn btn-primary" href="#redo" id="redo">
+                    <i class="icon-arrow-right icon-white"></i>Redo
+                </button>
+            </div>
+        </li>
+    </ul>
 </div>
 <div class="container-fluid">
 <div class="row-fluid">
