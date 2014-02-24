@@ -1,41 +1,36 @@
-<section class="design">
+<section class="design" data-ng-controller="DesignController" data-ng-init="init()">
 <div style="min-height: 660px; cursor: auto;" class="edit">
 <div>
     <ul class="nav" id="menu-layoutit">
         <li class="divider-vertical"></li>
         <li>
+            <div class="btn-group">
+                <a class="btn btn-primary" href="http://justjavac.com" target="_blank"><i class="icon-home icon-white"></i>Home</a>
+            </div>
             <div class="btn-group" data-toggle="buttons-radio">
                 <button type="button" id="edit" class="btn btn-primary active">
-                    <i class="icon-edit icon-white"></i>Editor
-                </button>
+                    <i class="icon-edit icon-white"></i>Editor</button>
                 <button type="button" class="btn btn-primary" id="devpreview">
-                    <i class="icon-eye-close icon-white"></i>Layout Editor
-                </button>
+                    <i class="icon-eye-close icon-white"></i>Layout Editor</button>
                 <button type="button" class="btn btn-primary"
                         id="sourcepreview">
-                    <i class="icon-eye-open icon-white"></i>Preview
-                </button>
+                    <i class="icon-eye-open icon-white"></i>Preview</button>
             </div>
             <div class="btn-group">
                 <button type="button" class="btn btn-primary" data-target="#downloadModal"
                         rel="/build/downloadModal" role="button" data-toggle="modal">
-                    <i class="icon-chevron-down icon-white"></i>Download
-                </button>
+                    <i class="icon-chevron-down icon-white"></i>Download</button>
                 <button class="btn btn-primary" href="/share/index"
                         role="button" data-toggle="modal" data-target="#shareModal">
-                    <i class="icon-share icon-white"></i>Save
-                </button>
+                    <i class="icon-share icon-white"></i>Save</button>
                 <button class="btn btn-primary" href="#clear" id="clear">
-                    <i class="icon-trash icon-white"></i>Empty
-                </button>
+                    <i class="icon-trash icon-white"></i>Empty</button>
             </div>
             <div class="btn-group">
                 <button class="btn btn-primary" href="#undo" id="undo">
-                    <i class="icon-arrow-left icon-white"></i>Revocation
-                </button>
+                    <i class="icon-arrow-left icon-white"></i>Revocation</button>
                 <button class="btn btn-primary" href="#redo" id="redo">
-                    <i class="icon-arrow-right icon-white"></i>Redo
-                </button>
+                    <i class="icon-arrow-right icon-white"></i>Redo</button>
             </div>
         </li>
     </ul>
@@ -48,27 +43,22 @@
     <li class="nav-header">
         <div class="pull-right popover-info">
             <i class="icon-question-sign "></i>
-
             <div class="popover fade right">
                 <div class="arrow"></div>
                 <h3 class="popover-title">Function</h3>
-
                 <div class="popover-content">Here set your grid layout, the total number of grid defaults to 12, with
                     a space division raster values ​​for each column, if you need more information,
                     please visit
-                    <a target="_blank" href="http://twitter.github.io/bootstrap/scaffolding.html#gridSystem">Bootstrap
-                        Grid system.</a>
+                    <a target="_blank" href="http://twitter.github.io/bootstrap/scaffolding.html#gridSystem">Bootstrap Grid system.</a>
                 </div>
             </div>
         </div>
-        <i class="icon-plus icon-white"></i>Layout Settings
-    </li>
+        <i class="icon-plus icon-white"></i>Layout Settings</li>
     <li style="display: list-item;" class="rows" id="estRows">
         <div class="lyrow ui-draggable">
             <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
             <div class="preview">
                 <input value="12" type="text">
             </div>
@@ -80,9 +70,8 @@
         </div>
         <div class="lyrow ui-draggable">
             <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
             <div class="preview">
                 <input value="6 6" type="text">
             </div>
@@ -95,9 +84,8 @@
         </div>
         <div class="lyrow ui-draggable">
             <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
             <div class="preview">
                 <input value="8 4" type="text">
             </div>
@@ -110,9 +98,8 @@
         </div>
         <div class="lyrow ui-draggable">
             <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
             <div class="preview">
                 <input value="4 4 4" type="text">
             </div>
@@ -126,9 +113,8 @@
         </div>
         <div class="lyrow ui-draggable">
             <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
             <div class="preview">
                 <input value="2 6 4" type="text">
             </div>
@@ -147,11 +133,9 @@
     <i class="icon-plus icon-white"></i>Basic CSS
     <div class="pull-right popover-info">
         <i class="icon-question-sign "></i>
-
         <div class="popover fade right">
             <div class="arrow"></div>
             <h3 class="popover-title">Help</h3>
-
             <div class="popover-content">Here are a series of basic elements of style, you can style settings via
                 the Edit button to modify the top right corner of the block. For more information,
                 please visit
@@ -163,56 +147,52 @@
 <li style="display: none;" class="boxes" id="elmBase">
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Alignment
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-left">Left</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-center">Center</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-right">Right</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Mark
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="muted">Disable</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-warning">Warning</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-error">Error</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-info">Prompt</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-success">Success</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Alignment <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-left">Left</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-center">Center</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-right">Right</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Mark <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="muted">Disable</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-warning">Warning</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-error">Error</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-info">Prompt</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-success">Success</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </span>
     <div class="preview">Title bar</div>
     <div class="view">
         <h3 contenteditable="true">h3. This is a visual layout system.</h3>
@@ -220,57 +200,53 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Alignment
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-left">Left</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-center">Center</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-right">Right</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Mark
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="muted">Disable</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-warning">Warning</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-error">Error</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-info">Prompt</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="text-success">Success</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <a class="btn btn-mini" href="#" rel="lead">Lead</a>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Alignment <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-left">Left</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-center">Center</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-right">Right</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Mark <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="muted">Disable</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-warning">Warning</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-error">Error</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-info">Prompt</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="text-success">Success</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        <a class="btn btn-mini" href="#" rel="lead">Lead</a>
+                                    </span>
     <div class="preview">Paragraph</div>
     <div class="view" contenteditable="true">
         <p>
@@ -283,14 +259,12 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Address</div>
     <div class="view">
         <address contenteditable="true">
@@ -298,18 +272,16 @@
             <br>795 Folsom Ave, Suite 600
             <br>San Francisco, CA 94107
             <br>
-            <abbr title="Phone">P:</abbr>(123) 456-7890
-        </address>
+            <abbr title="Phone">P:</abbr>(123) 456-7890</address>
     </div>
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <a class="btn btn-mini" href="#" rel="pull-right">Config</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <a class="btn btn-mini" href="#" rel="pull-right">Config</a>
+                                    </span>
     <div class="preview">Referenced block</div>
     <div class="view clearfix">
         <blockquote contenteditable="true">
@@ -322,67 +294,61 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="unstyled">No Style</a>
-                                            <a class="btn btn-mini" href="#" rel="inline">Embed</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="unstyled">No Style</a>
+                                        <a class="btn btn-mini" href="#" rel="inline">Embed</a>
+                                    </span>
     <div class="preview">Unordered list</div>
     <div class="view">
         <ul contenteditable="true">
-            <li>News</li>
-            <li>sports competition</li>
-            <li>entertainment gossip</li>
-            <li>edge technology</li>
-            <li>Global Finance</li>
-            <li>Weather Forecast</li>
-            <li>real estate home</li>
-            <li>online games</li>
+            <li>News</ li>
+            <li>sports competition</ li>
+            <li>entertainment gossip</ li>
+            <li>edge technology</ li>
+            <li>Global Finance</ li>
+            <li>Weather Forecast</ li>
+            <li>real estate home</ li>
+            <li>online games</ li>
         </ul>
     </div>
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="unstyled">No Style</a>
-                                            <a class="btn btn-mini" href="#" rel="inline">Embed</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="unstyled">No Style</a>
+                                        <a class="btn btn-mini" href="#" rel="inline">Embed</a>
+                                    </span>
     <div class="preview">Ordered list</div>
     <div class="view">
         <ol contenteditable="true">
-            <li>News</li>
-            <li>sports competition</li>
-            <li>entertainment gossip</li>
-            <li>edge technology</li>
-            <li>Global Finance</li>
-            <li>Weather Forecast</li>
-            <li>real estate home</li>
-            <li>online games</li>
+            <li>News</ li>
+            <li>sports competition</ li>
+            <li>entertainment gossip</ li>
+            <li>edge technology</ li>
+            <li>Global Finance</ li>
+            <li>Weather Forecast</ li>
+            <li>real estate home</ li>
+            <li>online games</ li>
         </ol>
     </div>
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="dl-horizontal">VerticalAlignment</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="dl-horizontal">VerticalAlignment</a>
+                                    </span>
     <div class="preview">Detailed description</div>
     <div class="view">
         <dl contenteditable="true">
@@ -400,63 +366,65 @@
 </div>
 
 
+
+
+
+
+
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-primary">Emphasis</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-info">Information</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-success">Success</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-warning">Remind</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-danger">Danger</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-inverse">Reversion</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-link">Link</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Size
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="">
-                                                        <a href="#" rel="btn-large">Large</a>
-                                                    </li>
-                                                    <li class="active">
-                                                        <a href="#" rel="">Middle</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-small">Small</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="btn-mini">Miniature</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <a class="btn btn-mini" href="#" rel="btn-block">Banner</a>
-                                            <a class="btn btn-mini" href="#" rel="disabled">Disable</a>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-primary">Emphasis</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-info">Information</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-success">Success</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-warning">Remind</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-danger">Danger</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-inverse">Reversion</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-link">Link</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Size <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="">
+                                                    <a href="#" rel="btn-large">Large</a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#" rel="">Middle</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-small">Small</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="btn-mini">Miniature</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                        <a class="btn btn-mini" href="#" rel="btn-block">Banner</a>
+                                        <a class="btn btn-mini" href="#" rel="disabled">Disable</a>
+                                    </span>
     <div class="preview">Push button</div>
     <div class="view">
         <button class="btn" type="button" contenteditable="true">Push button</button>
@@ -470,11 +438,9 @@
     <i class="icon-plus icon-white"></i>Package
     <div class="pull-right popover-info">
         <i class="icon-question-sign "></i>
-
         <div class="popover fade right">
             <div class="arrow"></div>
             <h3 class="popover-title">Help</h3>
-
             <div class="popover-content">Drag Package to the layout box after dragging you can set PackageStyle.
                 See here for more Help
                 <a target="_blank" href="http://twitter.github.io/bootstrap/components.html">Components.</a>
@@ -485,40 +451,42 @@
 <li style="display: none;" class="boxes" id="elmComponents">
 
 
+
+
+
+
+
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="badge-success">Success</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="badge-warning">Warning</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="badge-important">Important</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="badge-info">Prompt</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="badge-inverse">Reciprocal</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="badge-success">Success</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="badge-warning">Warning</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="badge-important">Important</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="badge-info">Prompt</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="badge-inverse">Reciprocal</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                    </span>
     <div class="preview">Micro Standard</div>
     <div class="view">
         <span class="badge" contenteditable="true">1</span>
@@ -526,24 +494,20 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="well">Embed</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="well">Embed</a>
+                                    </span>
     <div class="preview">Outline</div>
     <div class="view">
         <div class="hero-unit" contenteditable="true">
             <h1>Hello, world!</h1>
-
             <p>This is a visual layout template, you can click on the text to be modified
                 template can also be modified by clicking on the Rich Text Editor pop-up
                 box. Drag blocks to achieve the sort.</p>
-
             <p>
                 <a class="btn btn-primary btn-large" href="#">See more »</a>
             </p>
@@ -552,14 +516,12 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Page title</div>
     <div class="view">
         <div class="page-header" contenteditable="true">
@@ -571,22 +533,18 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Text</div>
     <div class="view">
         <h2 contenteditable="true">Title</h2>
-
         <p contenteditable="true">The visual layout program on HTML5 browser to run more perfect, to achieve
             automatic localization saved, even if you close the page can still be restored
             next time you open the last Operating.</p>
-
         <p>
             <a class="btn" href="#" contenteditable="true">See More »</a>
         </p>
@@ -594,29 +552,24 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Preview list</div>
     <div class="view">
         <ul class="thumbnails">
             <li class="span4">
                 <div class="thumbnail">
-                    <img alt="300x200" src="img/designs/people.jpg">
-
+                    <img alt="300x200" src="img/people.jpg">
                     <div class="caption" contenteditable="true">
                         <h3>Von Norman structure</h3>
-
                         <p>Also known as Princeton structure is a kind of program instructions and
                             data memory combined memory structure. Storing program instructions and
                             data storage Address Address point to the same physical memory of a different
                             Location.</p>
-
                         <p>
                             <a class="btn btn-primary" href="#">Browse</a>
                             <a class="btn" href="#">Share</a>
@@ -626,15 +579,12 @@
             </li>
             <li class="span4">
                 <div class="thumbnail">
-                    <img alt="300x200" src="img/designs/city.jpg">
-
+                    <img alt="300x200" src="img/city.jpg">
                     <div class="caption" contenteditable="true">
                         <h3>Harvard architecture</h3>
-
                         <p>Harvard architecture is a way to store program instructions and data are
                             stored separately from the memory structure, its main feature is the programs
                             and data stored in different storage space for independent addressing.</p>
-
                         <p>
                             <a class="btn btn-primary" href="#">Browse</a>
                             <a class="btn" href="#">Share</a>
@@ -644,15 +594,12 @@
             </li>
             <li class="span4">
                 <div class="thumbnail">
-                    <img alt="300x200" src="img/designs/sports.jpg">
-
+                    <img alt="300x200" src="img/sports.jpg">
                     <div class="caption" contenteditable="true">
                         <h3>Improved Harvard architecture</h3>
-
                         <p>Modification Harvard architecture with a separate Address bus and a separate
                             data bus, two buses from the program memory and data memory time division
                             multiplexing, making the structure more compact。</p>
-
                         <p>
                             <a class="btn btn-primary" href="#">Browse</a>
                             <a class="btn" href="#">Share</a>
@@ -665,34 +612,32 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="progress-info">Prompt</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="progress-success">Success</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="progress-warning">Warning</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="progress-danger">Danger</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
-                                            <a class="btn btn-mini" href="#" rel="progress-striped">Stripe</a>
-                                            <a class="btn btn-mini" href="#" rel="active">Animation</a>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="progress-info">Prompt</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="progress-success">Success</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="progress-warning">Warning</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="progress-danger">Danger</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                        <a class="btn btn-mini" href="#" rel="progress-striped">Stripe</a>
+                                        <a class="btn btn-mini" href="#" rel="active">Animation</a>
+                                    </span>
     <div class="preview">Progress bar</div>
     <div class="view">
         <div class="progress">
@@ -702,24 +647,20 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="well">Embed</a>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="well">Embed</a>
+                                    </span>
     <div class="preview">Embed Media</div>
     <div class="view">
         <div class="media">
-            <a href="#" class="pull-left"> <img src="img/designs/a_002.jpg" class="media-object"> </a>
-
+            <a href="#" class="pull-left"> <img src="img/a_002.jpg" class="media-object"> </a>
             <div class="media-body" contenteditable="true">
                 <h4 class="media-heading">Embed Media Title</h4>Please try to use HTML5-compatible video formats
-                and video player code in order to achieve a better experience effect.
-            </div>
+                and video player code in order to achieve a better experience effect.</div>
         </div>
     </div>
 </div>
@@ -729,14 +670,11 @@
 <li class="nav-header">
     <i class="icon-plus icon-white"></i>Mutual Package
     <span class="label label-important">NEW!</span>
-
     <div class="pull-right popover-info">
         <i class="icon-question-sign "></i>
-
         <div class="popover fade right">
             <div class="arrow"></div>
             <h3 class="popover-title">Help</h3>
-
             <div class="popover-content">Drag Package to the layout container after dragging, you can configure
                 the display Style. If you have any questions can be accessed
                 <a target="_blank"
@@ -748,9 +686,8 @@
 <li style="display: none;" class="boxes mute" id="elmJS">
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
     <div class="preview">Mask Form</div>
     <div class="view">
         <!-- Button to trigger modal -->
@@ -775,25 +712,21 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <a class="btn btn-mini" href="#" rel="navbar-inverse">Inverse</a>
-                                            <!--a class="btn btn-mini" href="#" rel="navbar-fixed-top">Navbar fixed top</a-->
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <a class="btn btn-mini" href="#" rel="navbar-inverse">Inverse</a>
+                                        <!--a class="btn btn-mini" href="#" rel="navbar-fixed-top">Navbar fixed top</a-->
+                                    </span>
     <div class="preview">Navigation Bar</div>
     <div class="view">
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container-fluid">
-                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"> <span
-                            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
                     <a href="#" class="brand" contenteditable="true">Site Name</a>
-
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                         <ul class="nav" contenteditable="true">
                             <li class="active">
@@ -806,8 +739,7 @@
                                 <a href="#">Link</a>
                             </li>
                             <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Drop-down menu <b
-                                        class="caret"></b></a>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Drop-down menu <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">Pull-down Navigation1</a>
@@ -835,8 +767,7 @@
                             </li>
                             <li class="divider-vertical"></li>
                             <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Drop-down menu <b
-                                        class="caret"></b></a>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Drop-down menu <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">Pull-down Navigation1</a>
@@ -864,32 +795,29 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Location
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="tabs-below">Bottom</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="tabs-left">Left</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="tabs-right">Right</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Location <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="tabs-below">Bottom</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="tabs-left">Left</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="tabs-right">Right</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                    </span>
     <div class="preview">Switching cards</div>
     <div class="view">
         <div class="tabbable" id="myTabs">
@@ -915,48 +843,43 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <span class="btn-group">
-                                                <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style
-                                                    <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li class="active">
-                                                        <a href="#" rel="">Default</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="alert-info">Prompt</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="alert-error">Error</a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a href="#" rel="alert-success">Success</a>
-                                                    </li>
-                                                </ul>
-                                            </span>
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <span class="btn-group">
+                                            <a class="btn btn-mini dropdown-toggle" data-toggle="dropdown" href="#">Style <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="active">
+                                                    <a href="#" rel="">Default</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="alert-info">Prompt</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="alert-error">Error</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="#" rel="alert-success">Success</a>
+                                                </li>
+                                            </ul>
                                         </span>
-
+                                    </span>
     <div class="preview">Prompt box</div>
     <div class="view">
         <div class="alert" contenteditable="true">
             <button type="button" class="close" data-dismiss="alert">×</button>
             <h4>Prompt!</h4>
-            <strong>Warning!</strong>Please note that your personal privacy.
-        </div>
+            <strong>Warning!</strong>Please note that your personal privacy.</div>
     </div>
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Accordion switch</div>
     <div class="view">
         <div class="accordion" id="myAccordion">
@@ -983,14 +906,12 @@
 </div>
 <div class="box box-element ui-draggable">
     <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>Delete</a>
-                                        <span class="drag label">
-                                            <i class="icon-move"></i>Drag</span>
-                                        <span class="configuration">
-                                            <button type="button" class="btn btn-mini" data-target="#editorModal"
-                                                    role="button" data-toggle="modal">Editor
-                                            </button>
-                                        </span>
-
+                                    <span class="drag label">
+                                        <i class="icon-move"></i>Drag</span>
+                                    <span class="configuration">
+                                        <button type="button" class="btn btn-mini" data-target="#editorModal"
+                                                role="button" data-toggle="modal">Editor</button>
+                                    </span>
     <div class="preview">Rotation Figure</div>
     <div class="view">
         <div class="carousel slide" id="myCarousel">
@@ -1001,22 +922,18 @@
             </ol>
             <div class="carousel-inner">
                 <div class="item active">
-                    <img alt="" src="img/designs/1.jpg">
-
+                    <img alt="" src="img/1.jpg">
                     <div class="carousel-caption" contenteditable="true">
                         <h4>Baseball</h4>
-
                         <p>Baseball is a sport played with sticks as the main features of the collective,
                             confrontational strong ball games in the United States, Japan is particularly
                             prevalent。</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img alt="" src="img/designs/2.jpg">
-
+                    <img alt="" src="img/2.jpg">
                     <div class="carousel-caption" contenteditable="true">
                         <h4>Surf</h4>
-
                         <p>Surfing the waves are powered, using its own virtuosity and balance, a
                             sport fighting the waves. Athlete standing on a surfboard, or use the web,
                             kneeling boards, inflatable rubber mats, rowing, kayaking and other water
@@ -1024,19 +941,17 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img alt="" src="img/designs/3.jpg">
-
+                    <img alt="" src="img/3.jpg">
                     <div class="carousel-caption" contenteditable="true">
                         <h4>Bicycle</h4>
-
                         <p>Bicycle riding competition as a tool to speed sport. 1896 was the first
                             Olympic Games as an official event. Tour de France is the most famous World
                             Cycling Championships。</p>
                     </div>
                 </div>
             </div>
-            <!--<a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>-->
-            <!--<a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>-->
+            <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
+            <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
         </div>
     </div>
 </div>
@@ -1044,8 +959,7 @@
 </ul>
 <ul class="nav nav-list accordion-group">
     <li class="nav-header">
-        <i class="icon-plus icon-white"></i>Application Expansion
-    </li>
+        <i class="icon-plus icon-white"></i>Application Expansion</li>
     <li style="display: none;" class="boxes mute"
         id="elmComm">
         <div class="preview">Construction...</div>
@@ -1096,64 +1010,65 @@
 </div>
 <!--/row-->
 </div>
+
 <!--/.fluid-container-->
-<div class="modal hide fade" role="dialog" id="editorModal">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
+<!--<div class="modal hide fade" role="dialog" id="editorModal">-->
+    <!--<div class="modal-header">-->
+        <!--<a class="close" data-dismiss="modal">×</a>-->
 
-        <h3>Editor</h3>
-    </div>
-    <div class="modal-body">
-        <p>
-            <textarea id="contenteditor"></textarea>
-        </p>
-    </div>
-    <div class="modal-footer">
-        <a id="savecontent" class="btn btn-primary" data-dismiss="modal">Save</a>
-        <a class="btn" data-dismiss="modal">Close</a>
-    </div>
-</div>
-<div class="modal hide fade" role="dialog" id="downloadModal">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
+        <!--<h3>Editor</h3>-->
+    <!--</div>-->
+    <!--<div class="modal-body">-->
+        <!--<p>-->
+            <!--<textarea id="contenteditor"></textarea>-->
+        <!--</p>-->
+    <!--</div>-->
+    <!--<div class="modal-footer">-->
+        <!--<a id="savecontent" class="btn btn-primary" data-dismiss="modal">Save</a>-->
+        <!--<a class="btn" data-dismiss="modal">Close</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="modal hide fade" role="dialog" id="downloadModal">-->
+    <!--<div class="modal-header">-->
+        <!--<a class="close" data-dismiss="modal">×</a>-->
 
-        <h3>Download</h3>
-    </div>
-    <div class="modal-body">
-        <p>Has generated a clean HTML below you can copy and paste the code into
-            your project.</p>
+        <!--<h3>Download</h3>-->
+    <!--</div>-->
+    <!--<div class="modal-body">-->
+        <!--<p>Has generated a clean HTML below you can copy and paste the code into-->
+            <!--your project.</p>-->
 
-        <div class="btn-group">
-            <button type="button" id="fluidPage" class="active btn btn-info">
-                <i class="icon-fullscreen icon-white"></i>Adaptive width
-            </button>
-            <button type="button" class="btn btn-info"
-                    id="fixedPage">
-                <i class="icon-screenshot icon-white"></i>Fixed width
-            </button>
-        </div>
-        <br>
-        <br>
+        <!--<div class="btn-group">-->
+            <!--<button type="button" id="fluidPage" class="active btn btn-info">-->
+                <!--<i class="icon-fullscreen icon-white"></i>Adaptive width-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-info"-->
+                    <!--id="fixedPage">-->
+                <!--<i class="icon-screenshot icon-white"></i>Fixed width-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<br>-->
 
-        <p>
-            <textarea></textarea>
-        </p>
-    </div>
-    <div class="modal-footer">
-        <a class="btn" data-dismiss="modal">Close</a>
-    </div>
-</div>
-<div class="modal hide fade" role="dialog" id="shareModal">
-    <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
+        <!--<p>-->
+            <!--<textarea></textarea>-->
+        <!--</p>-->
+    <!--</div>-->
+    <!--<div class="modal-footer">-->
+        <!--<a class="btn" data-dismiss="modal">Close</a>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="modal hide fade" role="dialog" id="shareModal">-->
+    <!--<div class="modal-header">-->
+        <!--<a class="close" data-dismiss="modal">×</a>-->
 
-        <h3>Save</h3>
-    </div>
-    <div class="modal-body">SaveSuccess</div>
-    <div class="modal-footer">
-        <a class="btn" data-dismiss="modal">Close</a>
-    </div>
-</div>
+        <!--<h3>Save</h3>-->
+    <!--</div>-->
+    <!--<div class="modal-body">SaveSuccess</div>-->
+    <!--<div class="modal-footer">-->
+        <!--<a class="btn" data-dismiss="modal">Close</a>-->
+    <!--</div>-->
+<!--</div>-->
 </div>
 </div>
 </section>

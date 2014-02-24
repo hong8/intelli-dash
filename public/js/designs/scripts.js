@@ -400,7 +400,7 @@ function initContainer(){
 	});
 	configurationElm();
 }
-$(document).ready(function() {
+function initDesign() {
 	CKEDITOR.disableAutoInline = true;
 	restoreData();
 	var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
@@ -408,7 +408,7 @@ $(document).ready(function() {
 		contentsCss: ['/css/designs/bootstrap-combined.min.css'],
 		allowedContent: true
 	});
-	$("body").css("min-height", $(window).height() - 90);
+	$(".design").css("min-height", $(window).height() - 90);
 	$(".demo").css("min-height", $(window).height() - 160);
     resizeRows();
 
@@ -462,7 +462,7 @@ $(document).ready(function() {
 		}
 	});
 	initContainer();
-	$('body.edit .demo').on("click","[data-target=#editorModal]",function(e) {
+	$('.design .edit .demo').on("click","[data-target=#editorModal]",function(e) {
 		e.preventDefault();
 		currenteditor = $(this).parent().parent().find('.view');
 		var eText = currenteditor.html();
@@ -489,8 +489,8 @@ $(document).ready(function() {
 		return false
 	});
 	$("#edit").click(function() {
-		$("body").removeClass("devpreview sourcepreview");
-		$("body").addClass("edit");
+		$(".design").removeClass("devpreview sourcepreview");
+		$(".design").addClass("edit");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
@@ -500,15 +500,15 @@ $(document).ready(function() {
 		clearDemo()
 	});
 	$("#devpreview").click(function() {
-		$("body").removeClass("edit sourcepreview");
-		$("body").addClass("devpreview");
+		$(".design").removeClass("edit sourcepreview");
+		$(".design").addClass("devpreview");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
 	});
 	$("#sourcepreview").click(function() {
-		$("body").removeClass("edit");
-		$("body").addClass("devpreview sourcepreview");
+		$(".design").removeClass("edit");
+		$(".design").addClass("devpreview sourcepreview");
 		removeMenuClasses();
 		$(this).addClass("active");
 		return false
@@ -546,4 +546,4 @@ $(document).ready(function() {
 	setInterval(function() {
 		handleSaveLayout()
 	}, timerSave)
-})
+}

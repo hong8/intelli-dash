@@ -3,11 +3,69 @@
 	{% include '../includes/head.html' %}
 	<body>
 		<div class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'views/header.html'" data-role="navigation"></div>
-		<section class="content">
+        <section class="content">
             <section class="container">
-  		        {% block content %}{% endblock %}
+                {% block content %}{% endblock %}
             </section>
         </section>
         {% include '../includes/foot.html' %}
+
+        <div class="modal hide fade" role="dialog" id="editorModal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+
+                <h3>Editor</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <textarea id="contenteditor"></textarea>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a id="savecontent" class="btn btn-primary" data-dismiss="modal">Save</a>
+                <a class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <div class="modal hide fade" role="dialog" id="downloadModal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+
+                <h3>Download</h3>
+            </div>
+            <div class="modal-body">
+                <p>Has generated a clean HTML below you can copy and paste the code into
+                    your project.</p>
+
+                <div class="btn-group">
+                    <button type="button" id="fluidPage" class="active btn btn-info">
+                        <i class="icon-fullscreen icon-white"></i>Adaptive width
+                    </button>
+                    <button type="button" class="btn btn-info"
+                            id="fixedPage">
+                        <i class="icon-screenshot icon-white"></i>Fixed width
+                    </button>
+                </div>
+                <br>
+                <br>
+
+                <p>
+                    <textarea></textarea>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
+        <div class="modal hide fade" role="dialog" id="shareModal">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+
+                <h3>Save</h3>
+            </div>
+            <div class="modal-body">SaveSuccess</div>
+            <div class="modal-footer">
+                <a class="btn" data-dismiss="modal">Close</a>
+            </div>
+        </div>
     </body>
 </html>
