@@ -1175,12 +1175,14 @@ data-ng-init="init()">
                                     <div class="preview">Title Bar</div>
                                     <div class="view">
                                         <div class="navbar navbar-default">
-                                            <div class="">
+                                            <div class="navbar-header">
                                                 <div class="container-fluid">
-                                                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-                                                    <a href="#" class="" contenteditable="true">Site Name</a>
+                                                    <button data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" class="navbar-toggle"> 
+                                                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+                                                    </button>
+                                                    <a href="#" class="navbar-brand" contenteditable="true">Site Name</a>
                                                     <div class="nav-collapse collapse navbar-responsive-collapse">
-                                                        <ul class="nav" contenteditable="true">
+                                                        <ul class="nav navbar-nav" contenteditable="true">
                                                             <li class="active">
                                                                 <a href="#">Home</a>
                                                             </li>
