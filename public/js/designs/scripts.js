@@ -105,7 +105,14 @@ function saveLayout(){
 	data.list[data.count] = window.demoHtml;
 	data.count++;
 	if (supportstorage()) {
-		localStorage.setItem("layoutdata",JSON.stringify(data));
+	    var href = location.href;
+		var strProject = "projects/";
+		var strPage = "pages/";
+		var idxProject = href.indexOf(strProject) + strProject.length();
+		var idxPage = href.indexOf(strPage) + strPage.length();
+		var project = href.substring( idxProject, href.indexOf( "/", idxProject + 1 ) );
+		var page = href.substring( idxPage, href.indexOf( "/", idxPage + 1 ) );
+		localStorage.setItem("layoutdata_"+project+"_"+page,JSON.stringify(data));
 	}
 	layouthistory = data;
 	//console.log(data);
@@ -377,7 +384,15 @@ $(window).resize(function() {
 
 function restoreData(){
 	if (supportstorage()) {
-		layouthistory = JSON.parse(localStorage.getItem("layoutdata"));
+		//layouthistory = JSON.parse(localStorage.getItem("layoutdata"));
+		var href = location.href;
+		var strProject = "projects/";
+		var strPage = "pages/";
+		var idxProject = href.indexOf(strProject) + strProject.length();
+		var idxPage = href.indexOf(strPage) + strPage.length();
+		var project = href.substring( idxProject, href.indexOf( "/", idxProject + 1 ) );
+		var page = href.substring( idxPage, href.indexOf( "/", idxPage + 1 ) );
+		layouthistory = JSON.parse(localStorage.getItem("layoutdata_"+project+"_"+page));
 		if (!layouthistory) return false;
 		window.demoHtml = layouthistory.list[layouthistory.count-1];
 		if (window.demoHtml) $(".demo").html(window.demoHtml);
