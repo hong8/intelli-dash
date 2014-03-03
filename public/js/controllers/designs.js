@@ -5,8 +5,13 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
 
     $scope.init = function() {
         initDesign();
-        $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000, true );
+        $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000 );
+        $scope.layoutSaveTimeout.then( function(){ $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000 ) } );
     }
+    
+    $scope.$on('$destroy', function() {
+        $timeout.cancel( $scope.layoutSaveTimeout );
+    });
 
     $scope.create = function() {
         var page = new Pages({
@@ -90,9 +95,4 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
 
         $scope.$routeParams = $routeParams;
     };
-    
-    $scope.$on('$destroy', function() {
-        $timeout.cancel( $scope.layoutSaveTimeout );
-    });
-    
 }]);
