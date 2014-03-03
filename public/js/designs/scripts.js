@@ -57,6 +57,13 @@ $(window).resizeend(
     }
 );
 
+CKEDITOR.disableAutoInline = true;
+var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
+	language: 'en',
+	contentsCss: ['/css/designs/bootstrap-combined.min.css'],
+	allowedContent: true
+});
+
 function resizeRows()
 {
     var dr = $(".demo > .lyrow > .view > .row-fluid");
@@ -417,13 +424,7 @@ function initContainer(){
 	configurationElm();
 }
 function initDesign() {
-	CKEDITOR.disableAutoInline = true;
 	restoreData();
-	var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
-		language: 'en',
-		contentsCss: ['/css/designs/bootstrap-combined.min.css'],
-		allowedContent: true
-	});
 	$(".design").css("min-height", $(window).height() - 90);
 	$(".demo").css("min-height", $(window).height() - 160);
     resizeRows();
