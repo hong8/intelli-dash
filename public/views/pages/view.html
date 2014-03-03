@@ -6,13 +6,13 @@
     <div>{{page.description}}</div>
     <div data-ng-show="global.user._id == page.owner._id">
         <a class="btn btn-default" href="/#!/projects/{{$routeParams.projectId}}/pages/{{page._id}}/design" data-ng-click="initDesign()">
-            <i class="glyphicon glyphicon-picture"></i>
+            <i class="icon-picture"></i>
         </a>
         <a class="btn btn-default" href="/#!/projects/{{$routeParams.projectId}}/pages/{{page._id}}/edit">
-        	<i class="glyphicon glyphicon-edit"></i>
+        	<i class="icon-edit"></i>
         </a> 
         <a class="btn btn-danger" data-ng-click="remove();">
-            <i class="glyphicon glyphicon-trash"></i>
+            <i class="icon-trash"></i>
         </a>
     </div>
 </section>
