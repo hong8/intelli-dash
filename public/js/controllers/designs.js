@@ -9,6 +9,7 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
         layoutSaveTimeout = $timeout( handleSaveLayout, 1000 );
         layoutSaveTimeout.then( function()
         { 
+            layoutSaveTimeout = $timeout( handleSaveLayout, 1000 );
             console.log("then~~~~~~~~~~~")
         } );
     }
