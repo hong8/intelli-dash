@@ -3,6 +3,8 @@
 angular.module('intelli-dash.designs').controller('DesignController', ['$scope', '$routeParams', '$location', '$timeout', 'Global', 'Pages', function($scope, $routeParams, $location, $timeout, Global, Pages) {
     $scope.global = Global;
 
+    var layoutSaveTimeout;
+    
     $scope.init = function() {
         initDesign();
         $scope.layoutTimeout = function()
@@ -10,7 +12,7 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
             handleSaveLayout();
             layoutSaveTimeout = $timeout( $scope.layoutTimeout, 1000 );
         };
-        var layoutSaveTimeout = $timeout( $scope.layoutTimeout, 1000 );
+        layoutSaveTimeout = $timeout( $scope.layoutTimeout, 1000 );
     }
     
     $scope.$on('$destroy', function() {
