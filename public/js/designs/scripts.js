@@ -419,11 +419,16 @@ function initContainer(){
 function initDesign() {
 	CKEDITOR.disableAutoInline = true;
 	restoreData();
-	var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
-		language: 'en',
-		contentsCss: ['/css/designs/bootstrap-combined.min.css'],
-		allowedContent: true
-	});
+	try
+	{
+	    var contenthandle = CKEDITOR.replace( 'contenteditor' ,{
+    		language: 'en',
+    		contentsCss: ['/css/designs/bootstrap-combined.min.css'],
+    		allowedContent: true
+    	});
+	}
+	catch (err) {}
+	
 	$(".design").css("min-height", $(window).height() - 90);
 	$(".demo").css("min-height", $(window).height() - 160);
     resizeRows();
