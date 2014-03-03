@@ -105,7 +105,7 @@ function saveLayout(){
 	data.list[data.count] = window.demoHtml;
 	data.count++;
 	if (supportstorage()) {
-	    var href = location.href;
+	    var href = location.hre.toString();
 		var strProject = "projects/";
 		var strPage = "pages/";
 		var idxProject = href.indexOf(strProject) + strProject.length();
@@ -385,7 +385,7 @@ $(window).resize(function() {
 function restoreData(){
 	if (supportstorage()) {
 		//layouthistory = JSON.parse(localStorage.getItem("layoutdata"));
-		var href = location.href;
+		var href = location.href.toString();
 		var strProject = "projects/";
 		var strPage = "pages/";
 		var idxProject = href.indexOf(strProject) + strProject.length();
