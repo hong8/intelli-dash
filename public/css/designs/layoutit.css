@@ -211,7 +211,7 @@ a.language-selected { font-style: italic; font-weight: bold; }
 .btn-gray.active,
 .open .dropdown-toggle.btn-gray {
   color: #000000;
-  background-color: #9b9389;
+  background-color: #eeeeee;
   border-color: #92897e;
 }
 .btn-gray:active,
