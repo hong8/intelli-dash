@@ -559,7 +559,4 @@ function initDesign() {
 	});
 	removeElm();
 	gridSystemGenerator();
-	setInterval(function() {
-		handleSaveLayout()
-	}, timerSave)
 }

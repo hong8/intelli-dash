@@ -54,7 +54,7 @@
 	bottom:0;
 	top:44px;
 	background:#ccc;
-	padding: 9px 0 9px 9px; 
+	padding: 8px; 
 	z-index:10;
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;

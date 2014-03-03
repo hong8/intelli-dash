@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('intelli-dash.designs').controller('DesignController', ['$scope', '$routeParams', '$location', 'Global', 'Pages', function($scope, $routeParams, $location, Global, Pages) {
+angular.module('intelli-dash.designs').controller('DesignController', ['$scope', '$routeParams', '$location', '$timeout', 'Global', 'Pages', function($scope, $routeParams, $location, $timeout, Global, Pages) {
     $scope.global = Global;
 
     $scope.init = function() {
         initDesign();
+        $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000 );
     }
 
     $scope.create = function() {
@@ -89,4 +90,9 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
 
         $scope.$routeParams = $routeParams;
     };
+    
+    $scope.$on('$destroy', function() {
+        $timeout.cancel( $scope.layoutSaveTimeout );
+    });
+    
 }]);
