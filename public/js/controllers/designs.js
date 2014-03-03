@@ -6,7 +6,7 @@ angular.module('intelli-dash.designs').controller('DesignController', ['$scope',
     $scope.init = function() {
         initDesign();
         $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000 );
-        $scope.layoutSaveTimeout.then( function(){ $scope.layoutSaveTimeout = $timeout( handleSaveLayout, 1000 ) } );
+        $scope.layoutSaveTimeout.then( function( result ){ if ( result ) $timeout( handleSaveLayout, 1000 ) } );
     }
     
     $scope.$on('$destroy', function() {
