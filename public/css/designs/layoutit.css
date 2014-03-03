@@ -201,16 +201,16 @@ body.devpreview { margin-left:0px;}
 a.language-selected { font-style: italic; font-weight: bold; }
 
 .btn-gray {
-  color: #ffffff;
-  background-color: #F5F5F5;
-  border-color: #F5F5F5;
+  color: #000000;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
 }
 .btn-gray:hover,
 .btn-gray:focus,
 .btn-gray:active,
 .btn-gray.active,
 .open .dropdown-toggle.btn-gray {
-  color: #ffffff;
+  color: #000000;
   background-color: #9b9389;
   border-color: #92897e;
 }
@@ -234,11 +234,11 @@ fieldset[disabled] .btn-gray:active,
 .btn-gray.disabled.active,
 .btn-gray[disabled].active,
 fieldset[disabled] .btn-gray.active {
-  background-color: #F5F5F5;
-  border-color: #F5F5F5;
+  background-color: #eeeeee;
+  border-color: #eeeeee;
 }
 .btn-gray .badge {
-  color: #F5F5F5;
+  color: #eeeeee;
   background-color: #ffffff;
 }
 
