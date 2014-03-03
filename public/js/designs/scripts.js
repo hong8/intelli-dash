@@ -105,13 +105,14 @@ function saveLayout(){
 	data.list[data.count] = window.demoHtml;
 	data.count++;
 	if (supportstorage()) {
-	    var href = location.hre.toString();
+	    var href = location.href;
 		var strProject = "projects/";
 		var strPage = "pages/";
-		var idxProject = href.indexOf(strProject) + strProject.length();
-		var idxPage = href.indexOf(strPage) + strPage.length();
+		var idxProject = href.indexOf(strProject) + strProject.length;
+		var idxPage = href.indexOf(strPage) + strPage.length;
 		var project = href.substring( idxProject, href.indexOf( "/", idxProject + 1 ) );
 		var page = href.substring( idxPage, href.indexOf( "/", idxPage + 1 ) );
+		
 		localStorage.setItem("layoutdata_"+project+"_"+page,JSON.stringify(data));
 	}
 	layouthistory = data;
@@ -385,11 +386,11 @@ $(window).resize(function() {
 function restoreData(){
 	if (supportstorage()) {
 		//layouthistory = JSON.parse(localStorage.getItem("layoutdata"));
-		var href = location.href.toString();
+		var href = location.href;
 		var strProject = "projects/";
 		var strPage = "pages/";
-		var idxProject = href.indexOf(strProject) + strProject.length();
-		var idxPage = href.indexOf(strPage) + strPage.length();
+		var idxProject = href.indexOf(strProject) + strProject.length;
+		var idxPage = href.indexOf(strPage) + strPage.length;
 		var project = href.substring( idxProject, href.indexOf( "/", idxProject + 1 ) );
 		var page = href.substring( idxPage, href.indexOf( "/", idxPage + 1 ) );
 		layouthistory = JSON.parse(localStorage.getItem("layoutdata_"+project+"_"+page));
