@@ -1371,14 +1371,16 @@ data-ng-init="init()">
                                     </span>
                                     <div class="preview">Rotation Image</div>
                                     <div class="view">
-                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                            <!-- Indicators -->
+                                    
+                                    
+                                    
+                                    
+                                        <div class="carousel slide" id="myCarousel">
                                             <ol class="carousel-indicators">
-                                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                                                <li data-slide-to="1" data-target="#myCarousel" class=""></li>
+                                                <li data-slide-to="2" data-target="#myCarousel" class=""></li>
                                             </ol>
-                                            <!-- Wrapper for slides -->
                                             <div class="carousel-inner">
                                                 <div class="item active">
                                                     <img alt="" src="img/designs/1.jpg">
@@ -1408,13 +1410,11 @@ data-ng-init="init()">
                                                             Cycling Championships。</p>
                                                     </div>
                                                 </div>
-                                            <!-- Controls -->
-                                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                            <span class="icon-chevron-left icon-white"></span>
-                                          </a>
-                                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                            <span class="icon-chevron-right icon-white"></span>
-                                          </a>
+                                            </div>
+                                            <a data-slide="prev" href="#myCarousel" class="left carousel-control"><span class="icon-chevron-left icon-white"></span></a>
+                                            <a data-slide="next" href="#myCarousel" class="right carousel-control"><span class="icon-chevron-right icon-white"></span></a>
+                                            
+                                            
                                         </div>
                                     </div>
                                 </div>
