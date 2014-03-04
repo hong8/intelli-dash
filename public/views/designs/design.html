@@ -1371,12 +1371,14 @@ data-ng-init="init()">
                                     </span>
                                     <div class="preview">Rotation Image</div>
                                     <div class="view">
-                                        <div class="carousel slide" id="myCarousel">
+                                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
                                             <ol class="carousel-indicators">
-                                                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-                                                <li data-slide-to="1" data-target="#myCarousel" class=""></li>
-                                                <li data-slide-to="2" data-target="#myCarousel" class=""></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                                             </ol>
+                                            <!-- Wrapper for slides -->
                                             <div class="carousel-inner">
                                                 <div class="item active">
                                                     <img alt="" src="img/designs/1.jpg">
@@ -1406,9 +1408,13 @@ data-ng-init="init()">
                                                             Cycling Championships。</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
-                                            <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
+                                            <!-- Controls -->
+                                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="icon-arrow-left"></span>
+                                          </a>
+                                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="icon-arrow-right"></span>
+                                          </a>
                                         </div>
                                     </div>
                                 </div>
